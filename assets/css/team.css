@@ -127,7 +127,7 @@
 
 .timeline-item::before {
   position: absolute;
-  top: 28px;
+  top: 38px;
   left: 118px;
   width: 11px;
   height: 11px;
@@ -231,7 +231,7 @@
 
   .timeline-item::before,
   .timeline-highlight::before {
-    top: 24px;
+    top: 30px;
     left: 7px;
   }
 
