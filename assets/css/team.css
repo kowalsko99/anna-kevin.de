@@ -19,9 +19,7 @@
   text-decoration: none;
 }
 
-.team-back-link:hover {
-  color: var(--text);
-}
+.team-back-link:hover { color: var(--text); }
 
 .team-kicker {
   margin: 0 0 10px;
@@ -71,7 +69,8 @@
   backdrop-filter: blur(16px);
 }
 
-.team-info-label {
+.team-info-label,
+.detail-label {
   color: var(--accent);
   font-size: .9rem;
   font-weight: 500;
@@ -92,151 +91,112 @@
   line-height: 1.65;
 }
 
-.timeline-intro {
-  max-width: 760px;
-  margin: 0 0 26px;
-}
+.timeline-intro { max-width: 760px; margin: 0 0 26px; }
+.team-timeline { position: relative; display: grid; gap: 14px; }
+.team-timeline::before { position: absolute; top: 16px; bottom: 16px; left: 124px; width: 1px; background: var(--line); content: ""; }
+.timeline-item { position: relative; display: grid; grid-template-columns: 100px 1fr; gap: 42px; align-items: start; padding: 18px 20px; border: 1px solid var(--line); border-radius: 18px; background: rgba(255,255,255,.34); }
+.timeline-item::before { position: absolute; top: 38px; left: 118px; width: 11px; height: 11px; border: 3px solid var(--background); border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 1px rgba(155,125,132,.28); content: ""; }
+.timeline-time { padding-top: 4px; color: var(--text); font-size: .82rem; font-weight: 500; line-height: 1.4; text-align: right; }
+.timeline-label { color: var(--accent); font-size: .72rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; }
+.timeline-details h3 { margin-top: 7px; font-size: 1.7rem; line-height: 1.05; }
+.timeline-details p { margin: 8px 0 0; }
+.timeline-highlight { border-color: rgba(155,125,132,.5); background: rgba(255,255,255,.58); }
+.timeline-highlight::before { width: 15px; height: 15px; left: 116px; background: var(--text); }
+.timeline-pending .timeline-time,
+.timeline-pending .timeline-label { color: var(--muted); }
+.timeline-pending::before { background: var(--background); box-shadow: inset 0 0 0 2px var(--accent), 0 0 0 1px rgba(155,125,132,.24); }
 
-.team-timeline {
-  position: relative;
+.detail-grid {
   display: grid;
-  gap: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
 }
 
-.team-timeline::before {
-  position: absolute;
-  top: 16px;
-  bottom: 16px;
-  left: 124px;
-  width: 1px;
-  background: var(--line);
-  content: "";
-}
-
-.timeline-item {
-  position: relative;
-  display: grid;
-  grid-template-columns: 100px 1fr;
-  gap: 42px;
-  align-items: start;
-  padding: 18px 20px;
+.detail-card {
+  padding: 22px;
   border: 1px solid var(--line);
   border-radius: 18px;
   background: rgba(255,255,255,.34);
 }
 
-.timeline-item::before {
-  position: absolute;
-  top: 38px;
-  left: 118px;
-  width: 11px;
-  height: 11px;
-  border: 3px solid var(--background);
-  border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 0 1px rgba(155,125,132,.28);
-  content: "";
+.detail-card h3 {
+  margin-top: 10px;
+  font-size: 2rem;
 }
 
-.timeline-time {
-  padding-top: 4px;
+.detail-card p {
+  margin: 10px 0 0;
+}
+
+.pending-card {
+  background: rgba(255,255,255,.18);
+}
+
+.section-note {
+  margin: 20px 0 0;
+  padding: 16px 18px;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 12px 12px 0;
+  background: rgba(255,255,255,.28);
+}
+
+.location-team-grid {
+  display: grid;
+  grid-template-columns: .9fr 1.4fr;
+  gap: 26px;
+  align-items: stretch;
+}
+
+.location-team-grid h3 {
+  margin-top: 10px;
+  font-size: 2.2rem;
+}
+
+.fact-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.fact-list > div {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 18px;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255,255,255,.28);
+}
+
+.fact-list strong {
   color: var(--text);
-  font-size: .82rem;
-  font-weight: 500;
-  line-height: 1.4;
-  text-align: right;
-}
-
-.timeline-label {
-  color: var(--accent);
-  font-size: .72rem;
-  font-weight: 500;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-}
-
-.timeline-details h3 {
-  margin-top: 7px;
-  font-size: 1.7rem;
-  line-height: 1.05;
-}
-
-.timeline-details p {
-  margin: 8px 0 0;
-}
-
-.timeline-highlight {
-  border-color: rgba(155,125,132,.5);
-  background: rgba(255,255,255,.58);
-}
-
-.timeline-highlight::before {
-  width: 15px;
-  height: 15px;
-  left: 116px;
-  background: var(--text);
-}
-
-.timeline-pending .timeline-time,
-.timeline-pending .timeline-label {
-  color: var(--muted);
-}
-
-.timeline-pending::before {
-  background: var(--background);
-  box-shadow: inset 0 0 0 2px var(--accent), 0 0 0 1px rgba(155,125,132,.24);
 }
 
 @media (max-width: 980px) {
-  .team-info-grid {
+  .team-info-grid,
+  .detail-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
+@media (max-width: 780px) {
+  .location-team-grid,
+  .fact-list > div {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 680px) {
-  .team-page {
-    width: min(100% - 22px, 1120px);
-    padding-top: 20px;
-  }
-
-  .team-hero {
-    padding-top: 50px;
-  }
-
-  .team-back-link {
-    top: 0;
-  }
-
-  .team-subtitle {
-    line-height: 1.6;
-  }
-
-  .team-info-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .team-info-card {
-    min-height: 210px;
-  }
-
-  .team-timeline::before {
-    left: 13px;
-  }
-
-  .timeline-item {
-    grid-template-columns: 1fr;
-    gap: 8px;
-    padding: 18px 18px 18px 38px;
-  }
-
+  .team-page { width: min(100% - 22px, 1120px); padding-top: 20px; }
+  .team-hero { padding-top: 50px; }
+  .team-back-link { top: 0; }
+  .team-subtitle { line-height: 1.6; }
+  .team-info-grid,
+  .detail-grid { grid-template-columns: 1fr; }
+  .team-info-card { min-height: 210px; }
+  .team-timeline::before { left: 13px; }
+  .timeline-item { grid-template-columns: 1fr; gap: 8px; padding: 18px 18px 18px 38px; }
   .timeline-item::before,
-  .timeline-highlight::before {
-    top: 30px;
-    left: 7px;
-  }
-
-  .timeline-time {
-    padding-top: 0;
-    text-align: left;
-  }
+  .timeline-highlight::before { top: 30px; left: 7px; }
+  .timeline-time { padding-top: 0; text-align: left; }
 }
