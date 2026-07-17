@@ -19,7 +19,7 @@ const portalPasswords = {
 
 const portalTargets = {
   guest: "gast.html",
-  service: "hochzeitsteam.html"
+  service: "ablauf-7k4m2.html"
 };
 
 let activePortal = null;
