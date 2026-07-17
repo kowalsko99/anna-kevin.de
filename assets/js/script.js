@@ -12,6 +12,18 @@ const portalNames = {
   service: "Hochzeitsteam"
 };
 
+const portalPasswords = {
+  guest: "Wenzel",
+  service: "04042028"
+};
+
+const portalTargets = {
+  guest: "gast.html",
+  service: "hochzeitsteam.html"
+};
+
+let activePortal = null;
+
 function updateCountdown() {
   if (!countdownDays || !countdownLabel) return;
 
@@ -36,7 +48,8 @@ updateCountdown();
 if (dialog && dialogTitle && passwordInput && formMessage && closeButton && form) {
   document.querySelectorAll("[data-portal]").forEach((button) => {
     button.addEventListener("click", () => {
-      dialogTitle.textContent = portalNames[button.dataset.portal];
+      activePortal = button.dataset.portal;
+      dialogTitle.textContent = portalNames[activePortal];
       passwordInput.value = "";
       formMessage.textContent = "";
       dialog.showModal();
@@ -53,17 +66,23 @@ if (dialog && dialogTitle && passwordInput && formMessage && closeButton && form
   form.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    if (!passwordInput.value.trim()) {
+    const enteredPassword = passwordInput.value.trim();
+
+    if (!enteredPassword) {
       formMessage.textContent = "Bitte gebt zunächst ein Passwort ein.";
       return;
     }
 
-    formMessage.textContent =
-      "Die geschützten Bereiche werden in der nächsten Version eingerichtet.";
+    if (!activePortal || enteredPassword !== portalPasswords[activePortal]) {
+      formMessage.textContent = "Das Passwort ist leider nicht korrekt.";
+      return;
+    }
+
+    window.location.href = portalTargets[activePortal];
   });
 }
 
 /*
-  Echte Passwörter werden später nicht sichtbar in dieser Datei gespeichert.
-  Dafür setzen wir eine sichere serverseitige Lösung ein.
+  Diese Passwörter dienen nur der aktuellen Testphase auf GitHub Pages.
+  Vor der Veröffentlichung werden sie durch eine sichere serverseitige Lösung ersetzt.
 */
