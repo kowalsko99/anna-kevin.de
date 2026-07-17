@@ -1,0 +1,126 @@
+.team-page {
+  width: min(100% - 32px, 1120px);
+  margin: 0 auto;
+  padding: 34px 0 80px;
+}
+
+.team-hero {
+  position: relative;
+  padding: 42px 0 36px;
+  text-align: center;
+}
+
+.team-back-link {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  color: var(--muted);
+  font-size: .8rem;
+  text-decoration: none;
+}
+
+.team-back-link:hover {
+  color: var(--text);
+}
+
+.team-kicker {
+  margin: 0 0 10px;
+  color: var(--accent);
+  font-size: .82rem;
+  font-weight: 500;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+.team-title {
+  display: block;
+  max-width: 920px;
+  margin: 0 auto;
+  font-size: clamp(3.4rem, 8vw, 6.8rem);
+  line-height: .95;
+}
+
+.team-subtitle {
+  margin: 20px 0 0;
+  color: var(--muted);
+  font-size: .85rem;
+  font-weight: 500;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.team-info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.team-info-card {
+  display: flex;
+  min-height: 245px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  text-align: center;
+  backdrop-filter: blur(16px);
+}
+
+.team-info-label {
+  color: var(--accent);
+  font-size: .9rem;
+  font-weight: 500;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.team-info-card h2 {
+  margin-top: 18px;
+  font-size: 2rem;
+  line-height: 1.05;
+}
+
+.team-info-card p {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: .92rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 980px) {
+  .team-info-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .team-page {
+    width: min(100% - 22px, 1120px);
+    padding-top: 20px;
+  }
+
+  .team-hero {
+    padding-top: 50px;
+  }
+
+  .team-back-link {
+    top: 0;
+  }
+
+  .team-subtitle {
+    line-height: 1.6;
+  }
+
+  .team-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-info-card {
+    min-height: 210px;
+  }
+}
