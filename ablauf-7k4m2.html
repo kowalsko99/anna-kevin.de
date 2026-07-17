@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css?v=8">
-  <link rel="stylesheet" href="assets/css/team.css?v=1">
+  <link rel="stylesheet" href="assets/css/team.css?v=2">
 </head>
 <body>
   <main class="team-page">
@@ -47,9 +47,67 @@
     </section>
 
     <section class="accordion-list" aria-label="Organisation des Hochzeitstages">
-      <details>
+      <details open>
         <summary><span>Gesamtzeitplan</span><span class="summary-icon">+</span></summary>
-        <div class="accordion-content"><p>Den detaillierten Zeitplan bauen wir im nächsten Schritt gemeinsam auf.</p></div>
+        <div class="accordion-content">
+          <p class="timeline-intro">Hier entsteht der zentrale Ablauf für alle Beteiligten. Bestätigte Zeiten sind bereits eingetragen, alle weiteren Punkte werden nach und nach ergänzt.</p>
+
+          <div class="team-timeline">
+            <article class="timeline-item timeline-pending">
+              <div class="timeline-time">Noch offen</div>
+              <div class="timeline-details">
+                <span class="timeline-label">Vorbereitung</span>
+                <h3>Aufbau & letzte Abstimmungen</h3>
+                <p>Ankunft der zuständigen Personen und Dienstleister, Aufbau der Dekoration sowie Technik- und Ablaufcheck.</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-time">15:00 Uhr</div>
+              <div class="timeline-details">
+                <span class="timeline-label">Gäste</span>
+                <h3>Ankunft der Gäste</h3>
+                <p>Die Gäste treffen am Löwenhof ein und nehmen ihre Plätze für die freie Trauung ein.</p>
+              </div>
+            </article>
+
+            <article class="timeline-item timeline-highlight">
+              <div class="timeline-time">15:30 Uhr</div>
+              <div class="timeline-details">
+                <span class="timeline-label">Hauptmoment</span>
+                <h3>Freie Trauung</h3>
+                <p>Beginn der freien Trauung. Der genaue Ablauf wird später gemeinsam mit der Traurednerin abgestimmt.</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-time">Im Anschluss</div>
+              <div class="timeline-details">
+                <span class="timeline-label">Übergang</span>
+                <h3>Empfang & gemeinsamer Start in die Feier</h3>
+                <p>Nach der Trauung bleiben alle Gäste im Löwenhof. Der genaue Übergang und die Zuständigkeiten werden noch festgelegt.</p>
+              </div>
+            </article>
+
+            <article class="timeline-item timeline-pending">
+              <div class="timeline-time">Noch offen</div>
+              <div class="timeline-details">
+                <span class="timeline-label">Abend</span>
+                <h3>Essen, Programmpunkte & Feier</h3>
+                <p>Die Zeiten für Essen, Hochzeitstanz, Torte und weitere Programmpunkte werden später ergänzt.</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-time">Bis 04:00 Uhr</div>
+              <div class="timeline-details">
+                <span class="timeline-label">Ende</span>
+                <h3>Veranstaltungsende</h3>
+                <p>Die Feier endet spätestens um 04:00 Uhr.</p>
+              </div>
+            </article>
+          </div>
+        </div>
       </details>
 
       <details>
