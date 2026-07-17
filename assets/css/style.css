@@ -1,0 +1,152 @@
+:root {
+  --background: #f5f1ec;
+  --surface: rgba(255,255,255,.58);
+  --surface-hover: rgba(255,255,255,.82);
+  --text: #292725;
+  --muted: #6f6963;
+  --accent: #9b7d84;
+  --line: rgba(41,39,37,.16);
+  --shadow: 0 24px 70px rgba(67,55,49,.12);
+  --radius: 28px;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-width: 320px;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top right, rgba(174,146,152,.18), transparent 33%),
+    radial-gradient(circle at bottom left, rgba(255,255,255,.9), transparent 35%),
+    var(--background);
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+button,input { font: inherit; }
+.landing {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 48px 20px;
+}
+.hero { width: min(100%, 920px); text-align: center; }
+.eyebrow {
+  margin: 0 0 14px;
+  color: var(--accent);
+  font-size: .72rem;
+  font-weight: 500;
+  letter-spacing: .24em;
+  text-transform: uppercase;
+}
+h1,h2 {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 14px;
+  font-size: clamp(3.4rem, 11vw, 7.5rem);
+  line-height: .84;
+  letter-spacing: -.04em;
+}
+.ampersand { color: var(--accent); font-size: .7em; font-style: italic; }
+.date {
+  margin: 24px 0 0;
+  font-size: .8rem;
+  font-weight: 500;
+  letter-spacing: .28em;
+}
+.divider { width: 48px; height: 1px; margin: 28px auto; background: var(--accent); }
+.intro {
+  max-width: 570px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: clamp(.95rem,2.5vw,1.05rem);
+  line-height: 1.75;
+}
+.portal-grid {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 18px;
+  margin-top: 46px;
+}
+.portal-card {
+  display: flex;
+  min-height: 245px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 28px;
+  text-align: left;
+  cursor: pointer;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(16px);
+  transition: transform .18s ease, background .18s ease, border-color .18s ease;
+}
+.portal-card:hover,.portal-card:focus-visible {
+  transform: translateY(-5px);
+  border-color: rgba(155,125,132,.5);
+  background: var(--surface-hover);
+  outline: none;
+}
+.portal-number { color: var(--accent); font-size: .72rem; font-weight: 500; letter-spacing: .18em; }
+.portal-title { margin-top: 34px; font-family: "Cormorant Garamond",serif; font-size: 2.4rem; font-weight: 500; }
+.portal-description { max-width: 300px; margin-top: 8px; color: var(--muted); font-size: .9rem; line-height: 1.6; }
+.portal-link { margin-top: auto; padding-top: 26px; font-size: .78rem; font-weight: 500; }
+.login-dialog {
+  width: min(calc(100% - 32px),480px);
+  padding: 0;
+  border: 0;
+  border-radius: 28px;
+  background: rgba(250,248,245,.97);
+  box-shadow: 0 30px 100px rgba(30,25,22,.3);
+}
+.login-dialog::backdrop { background: rgba(33,29,27,.44); backdrop-filter: blur(8px); }
+.login-form { position: relative; padding: 38px 30px 30px; }
+.close-button {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+h2 { font-size: 2.6rem; }
+.dialog-text { margin: 12px 0 28px; color: var(--muted); font-size: .92rem; line-height: 1.6; }
+label { display: block; margin-bottom: 8px; font-size: .78rem; font-weight: 500; }
+input {
+  width: 100%;
+  height: 54px;
+  padding: 0 16px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  color: var(--text);
+  background: rgba(255,255,255,.76);
+  outline: none;
+}
+input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(155,125,132,.12); }
+.form-message { min-height: 20px; margin: 8px 0; color: var(--accent); font-size: .8rem; }
+.submit-button {
+  width: 100%;
+  height: 54px;
+  border: 0;
+  border-radius: 14px;
+  color: white;
+  background: var(--text);
+  cursor: pointer;
+  font-weight: 500;
+}
+@media (max-width:680px) {
+  .landing { align-items: start; padding-top: 76px; }
+  h1 { flex-wrap: wrap; gap: 7px; }
+  .portal-grid { grid-template-columns: 1fr; margin-top: 36px; }
+  .portal-card { min-height: 205px; }
+}

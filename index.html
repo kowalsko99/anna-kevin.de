@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hochzeitsportal von Anna und Kevin">
+  <title>Anna & Kevin | 20.05.2028</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <main class="landing">
+    <section class="hero">
+      <p class="eyebrow">Willkommen</p>
+      <h1><span>Anna</span><span class="ampersand">&amp;</span><span>Kevin</span></h1>
+      <p class="date">20.05.2028</p>
+      <div class="divider"></div>
+      <p class="intro">Schön, dass ihr unseren Hochzeitstag begleitet. Bitte wählt den für euch vorgesehenen Bereich.</p>
+
+      <div class="portal-grid">
+        <button class="portal-card" type="button" data-portal="guest">
+          <span class="portal-number">01</span>
+          <span class="portal-title">Gäste</span>
+          <span class="portal-description">Informationen rund um unsere Hochzeit</span>
+          <span class="portal-link">Bereich öffnen →</span>
+        </button>
+
+        <button class="portal-card" type="button" data-portal="service">
+          <span class="portal-number">02</span>
+          <span class="portal-title">Dienstleister</span>
+          <span class="portal-description">Detaillierte Informationen für unseren Hochzeitstag</span>
+          <span class="portal-link">Bereich öffnen →</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="login-dialog" id="login-dialog">
+    <form class="login-form" method="dialog">
+      <button class="close-button" type="button" id="close-dialog" aria-label="Fenster schließen">×</button>
+      <p class="eyebrow">Geschützter Bereich</p>
+      <h2 id="dialog-title">Portal öffnen</h2>
+      <p class="dialog-text">Bitte gebt das Passwort ein, das ihr von uns erhalten habt.</p>
+      <label for="password">Passwort</label>
+      <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Passwort eingeben">
+      <p class="form-message" id="form-message" aria-live="polite"></p>
+      <button class="submit-button" type="submit">Portal öffnen</button>
+    </form>
+  </dialog>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
