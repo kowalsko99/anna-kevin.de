@@ -4,11 +4,35 @@ const passwordInput = document.querySelector("#password");
 const formMessage = document.querySelector("#form-message");
 const closeButton = document.querySelector("#close-dialog");
 const form = document.querySelector(".login-form");
+const countdownDays = document.querySelector("#countdown-days");
+const countdownLabel = document.querySelector(".countdown-label");
 
 const portalNames = {
   guest: "Gästebereich",
-  service: "Dienstleisterbereich"
+  service: "Hochzeitsteam"
 };
+
+function updateCountdown() {
+  const weddingDate = new Date(2028, 4, 20);
+  const today = new Date();
+
+  today.setHours(0, 0, 0, 0);
+  weddingDate.setHours(0, 0, 0, 0);
+
+  const millisecondsPerDay = 1000 * 60 * 60 * 24;
+  const daysRemaining = Math.max(
+    0,
+    Math.ceil((weddingDate - today) / millisecondsPerDay)
+  );
+
+  countdownDays.textContent = daysRemaining;
+  countdownLabel.textContent =
+    daysRemaining === 1
+      ? "Tag bis zu unserer Hochzeit"
+      : "Tage bis zu unserer Hochzeit";
+}
+
+updateCountdown();
 
 document.querySelectorAll("[data-portal]").forEach((button) => {
   button.addEventListener("click", () => {
