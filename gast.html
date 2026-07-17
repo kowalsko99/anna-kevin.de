@@ -4,30 +4,164 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Gästebereich der Hochzeit von Anna und Kevin">
-  <title>Gästebereich | Anna & Kevin</title>
+  <title>Unser Tag mit euch | Anna & Kevin</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=4">
+  <link rel="stylesheet" href="assets/css/style.css?v=6">
 </head>
 <body>
-  <main class="landing">
-    <section class="hero">
-      <p class="eyebrow">Anna & Kevin</p>
-      <h1><span>Gästebereich</span></h1>
-      <p class="date">20.05.2028</p>
-      <div class="divider"></div>
-      <p class="intro">
-        <span>Hier entsteht nach und nach euer Bereich mit allen wichtigen Informationen.</span>
-      </p>
-      <div class="portal-grid" style="grid-template-columns: 1fr; max-width: 520px; margin-inline: auto;">
-        <a class="portal-card" href="index.html" style="text-decoration: none; color: inherit; min-height: 180px;">
-          <span class="portal-title">Zurück zur Startseite</span>
-          <span class="portal-description">Die Inhalte ergänzen wir jetzt Schritt für Schritt.</span>
-          <span class="portal-link">Zurück →</span>
-        </a>
+  <main class="guest-page">
+    <header class="guest-hero">
+      <a class="back-link" href="index.html">← Zurück zur Startseite</a>
+      <p class="guest-kicker">Anna & Kevin</p>
+      <h1 class="guest-title">Unser Tag mit euch</h1>
+      <p class="guest-subtitle">20. Mai 2028 · Löwenhof Lohfelden</p>
+    </header>
+
+    <section class="info-grid" aria-label="Die wichtigsten Informationen">
+      <article class="info-card">
+        <span class="info-label">Wann</span>
+        <h2>Samstag, 20. Mai 2028</h2>
+        <p>Freie Trauung um <strong>15:30 Uhr</strong></p>
+        <p class="info-note">Bitte seid spätestens um <strong>15:15 Uhr</strong> vor Ort. Die Braut wartet nicht – und ein später Auftritt gehört bitte nicht zum Programm.</p>
+      </article>
+
+      <article class="info-card">
+        <span class="info-label">Wo</span>
+        <h2>Löwenhof Lohfelden</h2>
+        <p>Unsere Trauung und Feier finden an derselben Location statt.</p>
+      </article>
+
+      <article class="info-card">
+        <span class="info-label">Trauung & Feier</span>
+        <h2>Alles an einem Ort</h2>
+        <p>Die freie Trauung und die anschließende Hochzeitsfeier finden im Löwenhof statt. Ein Ortswechsel ist nicht erforderlich.</p>
+      </article>
+    </section>
+
+    <aside class="unplugged-banner">
+      <div>
+        <span class="info-label">Wichtiger Hinweis</span>
+        <h2>Unplugged Ceremony</h2>
       </div>
+      <p>Während unserer freien Trauung bitten wir euch ausdrücklich darum, auf Handys, Kameras und eigene Fotos zu verzichten. Unser Fotograf hält alle wichtigen Momente für uns fest.</p>
+    </aside>
+
+    <section class="accordion-list" aria-label="Weitere Informationen">
+      <details>
+        <summary><span>Der Hochzeitstag</span><span class="summary-icon">+</span></summary>
+        <div class="accordion-content">
+          <p>Ab <strong>15:00 Uhr</strong> heißen wir euch im Löwenhof willkommen.</p>
+          <p>Die freie Trauung beginnt um <strong>15:30 Uhr</strong>. Im Anschluss feiern wir gemeinsam vor Ort weiter.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary><span>Anreise & Übernachtung</span><span class="summary-icon">+</span></summary>
+        <div class="accordion-content">
+          <div class="location-block">
+            <div>
+              <span class="info-label">Location</span>
+              <h3>Löwenhof Lohfelden</h3>
+              <p>Bachstraße 36<br>34253 Lohfelden</p>
+              <p>Direkt an der Location stehen auf dem Schotterparkplatz ausreichend kostenfreie Parkplätze zur Verfügung.</p>
+            </div>
+            <iframe class="map-frame" title="Karte zum Löwenhof Lohfelden" src="https://www.google.com/maps?q=Bachstra%C3%9Fe%2036%2C%2034253%20Lohfelden&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div class="location-block hotel-block">
+            <div>
+              <span class="info-label">Übernachtung</span>
+              <h3>Hotel zur Post</h3>
+              <p>Hauptstraße 29<br>34253 Lohfelden</p>
+              <p>Das Hotel gehört zum Löwenhof und liegt etwa 650 Meter von der Location entfernt.</p>
+              <p><strong>Telefon:</strong> <a href="tel:+4956195100">+49 (0) 561 95100</a><br><strong>E-Mail:</strong> <a href="mailto:zur@post-lohfelden.de">zur@post-lohfelden.de</a></p>
+              <p class="info-note">Die Reservierung und Bezahlung des Hotelzimmers erfolgen eigenständig durch die Gäste.</p>
+              <div class="button-row">
+                <a class="text-button" href="https://www.post-lohfelden.de/" target="_blank" rel="noopener">Hotel ansehen</a>
+                <a class="text-button secondary" href="https://www.google.com/maps/dir/?api=1&destination=Hauptstra%C3%9Fe+29%2C+34253+Lohfelden" target="_blank" rel="noopener">Route öffnen</a>
+              </div>
+            </div>
+            <iframe class="map-frame" title="Karte zum Hotel zur Post" src="https://www.google.com/maps?q=Hauptstra%C3%9Fe%2029%2C%2034253%20Lohfelden&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary><span>Dresscode</span><span class="summary-icon">+</span></summary>
+        <div class="accordion-content">
+          <p>Die Informationen zu unserem Dresscode ergänzen wir noch.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary><span>Zu- oder Absage</span><span class="summary-icon">+</span></summary>
+        <div class="accordion-content">
+          <p>Bitte gebt uns spätestens bis zum <strong>09.04.2028</strong> Bescheid, ob ihr dabei sein könnt.</p>
+          <form class="guest-form" data-demo-form>
+            <div class="form-grid">
+              <label>Vor- und Nachname<input type="text" name="name" required></label>
+              <label>Rückmeldung<select name="status" required><option value="">Bitte auswählen</option><option>Zusage</option><option>Absage</option></select></label>
+              <label>Anzahl aller teilnehmenden Personen<input type="number" name="persons" min="0" required></label>
+              <label class="full-width">Namen aller Begleitpersonen und Kinder<textarea name="companions" rows="3"></textarea></label>
+              <label class="full-width">Essensbesonderheiten, Allergien oder Unverträglichkeiten<textarea name="food" rows="3"></textarea></label>
+              <label>Interesse an einem Hotelzimmer<select name="hotel"><option>Nein</option><option>Ja</option><option>Noch unklar</option></select></label>
+              <label class="full-width">Nachricht an uns<textarea name="message" rows="4" placeholder="Hier ist Platz für alles, was ihr uns noch mitteilen möchtet."></textarea></label>
+            </div>
+            <button class="submit-button form-submit" type="submit">Rückmeldung absenden</button>
+            <p class="form-status" aria-live="polite">Die automatische Übermittlung per E-Mail und in die Gästeliste richten wir im nächsten technischen Schritt ein.</p>
+          </form>
+        </div>
+      </details>
+
+      <details>
+        <summary><span>Ansprechpartner</span><span class="summary-icon">+</span></summary>
+        <div class="accordion-content">
+          <div class="contact-grid">
+            <div class="contact-card"><span class="info-label">Trauzeuge von Kevin</span><h3>André Wenzel</h3></div>
+            <div class="contact-card"><span class="info-label">Trauzeugin von Anna</span><h3>Milena Hildebrandt</h3></div>
+          </div>
+          <p>Für Überraschungen, Beiträge oder organisatorische Fragen könnt ihr euch über das Kontaktformular direkt an unsere Trauzeugen wenden.</p>
+          <form class="guest-form" data-demo-form>
+            <div class="form-grid">
+              <label>Name<input type="text" name="name" required></label>
+              <label>E-Mail-Adresse<input type="email" name="email" required></label>
+              <label>Ansprechpartner auswählen<select name="contact" required><option value="">Bitte auswählen</option><option>André Wenzel</option><option>Milena Hildebrandt</option></select></label>
+              <label class="full-width">Nachricht<textarea name="message" rows="5" required></textarea></label>
+            </div>
+            <button class="submit-button form-submit" type="submit">Nachricht absenden</button>
+            <p class="form-status" aria-live="polite">Die Zieladresse ergänzen wir, sobald die separate E-Mail-Adresse erstellt wurde.</p>
+          </form>
+        </div>
+      </details>
+
+      <details>
+        <summary><span>FAQ</span><span class="summary-icon">+</span></summary>
+        <div class="accordion-content faq-list">
+          <details open>
+            <summary>Dürfen wir während der Trauung Fotos machen?</summary>
+            <div>
+              <p>Unsere freie Trauung wird als <strong>Unplugged Ceremony</strong> stattfinden. Während der Zeremonie bitten wir euch daher ausdrücklich darum, eure Handys und Kameras nicht zu benutzen.</p>
+              <p>Unser Fotograf wird alle wichtigen und emotionalen Momente professionell festhalten. Die entstandenen Bilder der Trauung teilen wir anschließend sehr gerne mit euch.</p>
+              <p>Uns ist wichtig, dass ihr diesen Moment gemeinsam mit uns erlebt, statt ihn durch einen Bildschirm zu verfolgen. Außerdem möchten wir auf unseren Hochzeitsfotos lieber eure Gesichter und Emotionen sehen als eine Reihe hochgehaltener Handys.</p>
+              <p>Nach der Trauung dürft ihr selbstverständlich gerne fotografieren. Vor Ort wird es außerdem eine gesonderte Möglichkeit geben, über die ihr eure Bilder mit uns teilen könnt.</p>
+            </div>
+          </details>
+          <details><summary>Können wir einen Beitrag oder eine Überraschung planen?</summary><div><p>Sehr gerne – bitte sprecht eure Idee vorher unbedingt mit André oder Milena ab. So können sie prüfen, ob sie in den Ablauf passt und alles sinnvoll koordinieren.</p><p>Kevin und spontane Überraschungen führen erfahrungsgemäß keine besonders harmonische Beziehung. Im Interesse eines entspannten Hochzeitstages sollten daher auch die besten Ideen vorher kurz abgestimmt werden.</p></div></details>
+          <details><summary>Habt ihr besondere Geschenkwünsche?</summary><div><p>Das größte Geschenk ist, dass ihr diesen Tag gemeinsam mit uns feiert. Falls ihr uns darüber hinaus eine Freude machen möchtet, wünschen wir uns einen finanziellen Beitrag für unsere gemeinsame Zukunft.</p></div></details>
+          <details><summary>Was ist bei Allergien oder Unverträglichkeiten zu tun?</summary><div><p>Bitte gebt Allergien, Unverträglichkeiten und besondere Ernährungsbedürfnisse direkt bei eurer Zu- oder Absage an. Alternativ könnt ihr euch auch persönlich bei Anna oder Kevin melden.</p></div></details>
+          <details><summary>Kann ich eine Begleitperson mitbringen?</summary><div><p>Bitte orientiert euch an den Personen, die auf eurer Einladung genannt sind. Bei Fragen könnt ihr euch gerne direkt bei uns melden.</p></div></details>
+          <details><summary>Bis wann müssen wir zu- oder absagen?</summary><div><p>Bitte gebt uns spätestens bis zum <strong>09.04.2028</strong> Bescheid, ob ihr dabei sein könnt.</p></div></details>
+          <details><summary>Wann sollten wir spätestens vor Ort sein?</summary><div><p>Bitte seid spätestens um <strong>15:15 Uhr</strong> am Löwenhof. Die Braut wartet nicht – und ein später Auftritt gehört bitte nicht zum Programm.</p></div></details>
+          <details><summary>Findet die Hochzeit vollständig an einer Location statt?</summary><div><p>Ja. Die freie Trauung und die anschließende Hochzeitsfeier finden im Löwenhof statt. Ein Ortswechsel ist nicht erforderlich.</p></div></details>
+          <details><summary>Gibt es Parkplätze?</summary><div><p>Ja. Direkt an der Location stehen auf dem Schotterparkplatz ausreichend kostenfreie Parkplätze zur Verfügung.</p></div></details>
+          <details><summary>Gibt es eine Übernachtungsmöglichkeit?</summary><div><p>Ja. Das Hotel zur Post befindet sich etwa 650 Meter vom Löwenhof entfernt. Die Reservierung und Bezahlung des Zimmers erfolgen eigenständig.</p></div></details>
+        </div>
+      </details>
     </section>
   </main>
+
+  <script src="assets/js/guest.js?v=1"></script>
 </body>
 </html>
