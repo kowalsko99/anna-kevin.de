@@ -1,0 +1,16 @@
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.info-card .info-note {
+  width: 100%;
+}
+
+.info-grid .info-label,
+.unplugged-banner .info-label {
+  font-size: .9rem;
+}
