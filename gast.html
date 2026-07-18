@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css?v=7">
-  <link rel="stylesheet" href="assets/css/guest-overrides.css?v=1">
+  <link rel="stylesheet" href="assets/css/guest-overrides.css?v=2">
 </head>
 <body>
   <main class="guest-page">
@@ -41,6 +41,15 @@
       </article>
     </section>
 
+    <nav class="guest-quick-nav" aria-label="Schnellnavigation">
+      <a href="#hochzeitstag" data-open-target="hochzeitstag">Tagesablauf</a>
+      <a href="#anreise" data-open-target="anreise">Anreise</a>
+      <a href="#dresscode" data-open-target="dresscode">Dresscode</a>
+      <a href="#rsvp" data-open-target="rsvp">Zu-/Absage</a>
+      <a href="#ansprechpartner" data-open-target="ansprechpartner">Ansprechpartner</a>
+      <a href="#faq" data-open-target="faq">FAQ</a>
+    </nav>
+
     <aside class="unplugged-banner">
       <div>
         <span class="info-label">Wichtiger Hinweis</span>
@@ -50,7 +59,7 @@
     </aside>
 
     <section class="accordion-list" aria-label="Weitere Informationen">
-      <details>
+      <details id="hochzeitstag">
         <summary><span>Der Hochzeitstag</span><span class="summary-icon">+</span></summary>
         <div class="accordion-content">
           <p>Ab <strong>15:00 Uhr</strong> heißen wir euch im Löwenhof willkommen.</p>
@@ -58,7 +67,7 @@
         </div>
       </details>
 
-      <details>
+      <details id="anreise">
         <summary><span>Anreise & Übernachtung</span><span class="summary-icon">+</span></summary>
         <div class="accordion-content">
           <div class="location-block">
@@ -80,10 +89,11 @@
               <h3>Hotel zur Post</h3>
               <p>Hauptstraße 29<br>34253 Lohfelden</p>
               <p>Das Hotel gehört zum Löwenhof und liegt etwa 650 Meter von der Location entfernt.</p>
-              <p><strong>Telefon:</strong> <a href="tel:+4956195100">+49 (0) 561 95100</a><br><strong>E-Mail:</strong> <a href="mailto:zur@post-lohfelden.de">zur@post-lohfelden.de</a></p>
               <p class="info-note">Die Reservierung und Bezahlung des Hotelzimmers erfolgen eigenständig durch die Gäste.</p>
               <div class="button-row">
-                <a class="text-button" href="https://www.post-lohfelden.de/" target="_blank" rel="noopener">Hotel ansehen</a>
+                <a class="text-button" href="tel:+4956195100">Hotel anrufen</a>
+                <a class="text-button secondary" href="mailto:zur@post-lohfelden.de">E-Mail schreiben</a>
+                <a class="text-button secondary" href="https://www.post-lohfelden.de/" target="_blank" rel="noopener">Hotel ansehen</a>
                 <a class="text-button secondary" href="https://www.google.com/maps/dir/?api=1&destination=Hauptstra%C3%9Fe+29%2C+34253+Lohfelden" target="_blank" rel="noopener">Route öffnen</a>
               </div>
             </div>
@@ -92,58 +102,69 @@
         </div>
       </details>
 
-      <details>
+      <details id="dresscode">
         <summary><span>Dresscode</span><span class="summary-icon">+</span></summary>
         <div class="accordion-content">
           <p>Die Informationen zu unserem Dresscode ergänzen wir noch.</p>
         </div>
       </details>
 
-      <details>
+      <details id="rsvp">
         <summary><span>Zu- oder Absage</span><span class="summary-icon">+</span></summary>
         <div class="accordion-content">
-          <p>Bitte gebt uns spätestens bis zum <strong>09.04.2028</strong> Bescheid, ob ihr dabei sein könnt.</p>
-          <form class="guest-form" data-demo-form>
-            <div class="form-grid">
-              <label>Vor- und Nachname<input type="text" name="name" required></label>
-              <label>Rückmeldung<select name="status" required><option value="">Bitte auswählen</option><option>Zusage</option><option>Absage</option></select></label>
-              <label>Anzahl aller teilnehmenden Personen<input type="number" name="persons" min="0" required></label>
-              <label class="full-width">Namen aller Begleitpersonen und Kinder<textarea name="companions" rows="3"></textarea></label>
-              <label class="full-width">Essensbesonderheiten, Allergien oder Unverträglichkeiten<textarea name="food" rows="3"></textarea></label>
-              <label>Interesse an einem Hotelzimmer<select name="hotel"><option>Nein</option><option>Ja</option><option>Noch unklar</option></select></label>
-              <label class="full-width">Nachricht an uns<textarea name="message" rows="4" placeholder="Hier ist Platz für alles, was ihr uns noch mitteilen möchtet."></textarea></label>
-            </div>
-            <button class="submit-button form-submit" type="submit">Rückmeldung absenden</button>
-            <p class="form-status" aria-live="polite">Die automatische Übermittlung per E-Mail und in die Gästeliste richten wir im nächsten technischen Schritt ein.</p>
-          </form>
+          <div class="form-panel">
+            <span class="info-label">Eure Rückmeldung</span>
+            <h3>Seid ihr dabei?</h3>
+            <p>Bitte gebt uns spätestens bis zum <strong>09.04.2028</strong> Bescheid.</p>
+            <form class="guest-form" data-demo-form>
+              <div class="form-grid">
+                <label>Vor- und Nachname<input type="text" name="name" required></label>
+                <label>Rückmeldung<select name="status" required><option value="">Bitte auswählen</option><option>Zusage</option><option>Absage</option></select></label>
+                <label>Anzahl aller teilnehmenden Personen<input type="number" name="persons" min="0" required></label>
+                <label class="full-width">Namen aller Begleitpersonen und Kinder<textarea name="companions" rows="3"></textarea></label>
+                <label class="full-width">Essensbesonderheiten, Allergien oder Unverträglichkeiten<textarea name="food" rows="3"></textarea></label>
+                <label>Interesse an einem Hotelzimmer<select name="hotel"><option>Nein</option><option>Ja</option><option>Noch unklar</option></select></label>
+                <label class="full-width">Nachricht an uns<textarea name="message" rows="4" placeholder="Hier ist Platz für alles, was ihr uns noch mitteilen möchtet."></textarea></label>
+              </div>
+              <button class="submit-button form-submit full-submit" type="submit">Rückmeldung absenden</button>
+              <p class="form-status" aria-live="polite">Die automatische Übermittlung per E-Mail und in die Gästeliste richten wir im nächsten technischen Schritt ein.</p>
+            </form>
+          </div>
         </div>
       </details>
 
-      <details>
+      <details id="ansprechpartner">
         <summary><span>Ansprechpartner</span><span class="summary-icon">+</span></summary>
         <div class="accordion-content">
           <div class="contact-grid">
             <div class="contact-card"><span class="info-label">Trauzeuge von Kevin</span><h3>André Wenzel</h3></div>
             <div class="contact-card"><span class="info-label">Trauzeugin von Anna</span><h3>Milena Hildebrandt</h3></div>
           </div>
-          <p>Für Überraschungen, Beiträge oder organisatorische Fragen könnt ihr euch über das Kontaktformular direkt an unsere Trauzeugen wenden.</p>
-          <form class="guest-form" data-demo-form>
-            <div class="form-grid">
-              <label>Name<input type="text" name="name" required></label>
-              <label>E-Mail-Adresse<input type="email" name="email" required></label>
-              <label>Ansprechpartner auswählen<select name="contact" required><option value="">Bitte auswählen</option><option>André Wenzel</option><option>Milena Hildebrandt</option></select></label>
-              <label class="full-width">Nachricht<textarea name="message" rows="5" required></textarea></label>
-            </div>
-            <button class="submit-button form-submit" type="submit">Nachricht absenden</button>
-            <p class="form-status" aria-live="polite">Die Zieladresse ergänzen wir, sobald die separate E-Mail-Adresse erstellt wurde.</p>
-          </form>
+          <p>Für Überraschungen, Beiträge oder organisatorische Fragen könnt ihr euch direkt an unsere Trauzeugen wenden.</p>
+          <div class="button-row contact-button-row">
+            <a class="text-button" href="mailto:trauzeugen.anna.kevin@gmail.com">E-Mail schreiben</a>
+          </div>
+          <div class="form-panel">
+            <span class="info-label">Nachricht an die Trauzeugen</span>
+            <h3>Idee oder Überraschung abstimmen</h3>
+            <form class="guest-form" data-demo-form>
+              <div class="form-grid">
+                <label>Name<input type="text" name="name" required></label>
+                <label>E-Mail-Adresse<input type="email" name="email" required></label>
+                <label>Ansprechpartner auswählen<select name="contact" required><option value="">Bitte auswählen</option><option>André Wenzel</option><option>Milena Hildebrandt</option></select></label>
+                <label class="full-width">Nachricht<textarea name="message" rows="5" required></textarea></label>
+              </div>
+              <button class="submit-button form-submit full-submit" type="submit">Nachricht absenden</button>
+              <p class="form-status" aria-live="polite">Die Nachricht wird später automatisch an trauzeugen.anna.kevin@gmail.com übermittelt.</p>
+            </form>
+          </div>
         </div>
       </details>
 
-      <details>
+      <details id="faq">
         <summary><span>FAQ</span><span class="summary-icon">+</span></summary>
         <div class="accordion-content faq-list">
-          <details open>
+          <details>
             <summary>Dürfen wir während der Trauung Fotos machen?</summary>
             <div>
               <p>Unsere freie Trauung wird als <strong>Unplugged Ceremony</strong> stattfinden. Während der Zeremonie bitten wir euch daher ausdrücklich darum, eure Handys und Kameras nicht zu benutzen.</p>
@@ -164,8 +185,13 @@
         </div>
       </details>
     </section>
+
+    <footer class="guest-footer">
+      <p>Wir freuen uns sehr darauf, diesen Tag mit euch zu feiern.</p>
+      <strong>Anna & Kevin</strong>
+    </footer>
   </main>
 
-  <script src="assets/js/guest.js?v=1"></script>
+  <script src="assets/js/guest.js?v=2"></script>
 </body>
 </html>
