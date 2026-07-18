@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css?v=8">
-  <link rel="stylesheet" href="assets/css/team.css?v=4">
+  <link rel="stylesheet" href="assets/css/team.css?v=5">
 </head>
 <body>
   <main class="team-page">
@@ -27,8 +27,20 @@
       <article class="team-info-card"><span class="team-info-label">Wichtige Kontakte</span><h2>Anna, Kevin & Trauzeugen</h2><p>Kontaktdaten und Zuständigkeiten sind weiter unten gesammelt.</p></article>
     </section>
 
+    <nav class="team-quick-nav" aria-label="Schnellnavigation">
+      <a href="#zeitplan">Zeitplan</a>
+      <a href="#kontakte">Kontakte</a>
+      <a href="#dienstleister">Dienstleister</a>
+      <a href="#location">Location</a>
+      <a href="#aufbau">Aufbau</a>
+      <a href="#trauung">Trauung</a>
+      <a href="#feier">Feier</a>
+      <a href="#technik">Technik</a>
+      <a href="#offene-punkte">Offene Punkte</a>
+    </nav>
+
     <section class="accordion-list" aria-label="Organisation des Hochzeitstages">
-      <details open>
+      <details id="zeitplan">
         <summary><span>Gesamtzeitplan</span><span class="summary-icon">+</span></summary>
         <div class="accordion-content">
           <p class="timeline-intro">Der Ablauf enthält bereits alle bekannten Zeiten. Mit „ca.“ gekennzeichnete Punkte werden später noch final abgestimmt.</p>
@@ -50,12 +62,12 @@
         </div>
       </details>
 
-      <details>
+      <details id="kontakte">
         <summary><span>Kontakte & Zuständigkeiten</span><span class="summary-icon">+</span></summary>
         <div class="accordion-content">
           <div class="detail-grid">
-            <article class="detail-card"><span class="detail-label">Brautpaar</span><h3>Kevin Wenzel</h3><p><a href="tel:+491734360073">0173 / 4360073</a></p><p>Deko und Aufbau, Übergabe von Geschenken und Karten, Notfallkontakt.</p></article>
-            <article class="detail-card"><span class="detail-label">Brautpaar</span><h3>Anna</h3><p><a href="tel:+4916098047144">0160 / 98047144</a></p><p>Übergabe von Geschenken und Karten sowie Ansprechpartnerin für persönliche Rückfragen.</p></article>
+            <article class="detail-card"><span class="detail-label">Brautpaar</span><h3>Kevin Wenzel</h3><p>Deko und Aufbau, Übergabe von Geschenken und Karten, Notfallkontakt.</p><div class="contact-actions"><a class="team-link-button" href="tel:+491734360073">Anrufen</a></div></article>
+            <article class="detail-card"><span class="detail-label">Brautpaar</span><h3>Anna</h3><p>Übergabe von Geschenken und Karten sowie Ansprechpartnerin für persönliche Rückfragen.</p><div class="contact-actions"><a class="team-link-button" href="tel:+4916098047144">Anrufen</a></div></article>
             <article class="detail-card pending-card"><span class="detail-label">Trauzeuge</span><h3>André Wenzel</h3><p>Telefonnummer folgt nach Absprache.</p><p>Geschenkeplanung, Gästeempfang, Gruppenfotos und Notfallkontakt.</p></article>
             <article class="detail-card pending-card"><span class="detail-label">Trauzeugin</span><h3>Milena Hildebrandt</h3><p>Telefonnummer folgt nach Absprache.</p><p>Geschenkeplanung, Gästeempfang, Gruppenfotos und Notfallkontakt.</p></article>
           </div>
@@ -63,24 +75,24 @@
         </div>
       </details>
 
-      <details>
+      <details id="dienstleister">
         <summary><span>Dienstleister</span><span class="summary-icon">+</span></summary>
         <div class="accordion-content">
           <div class="detail-grid">
-            <article class="detail-card"><span class="detail-label">Traurednerin</span><h3>Wiebke Mühling</h3><p>Instagram: <a href="https://www.instagram.com/w.moments_trauungen/" target="_blank" rel="noopener">@w.moments_trauungen</a></p><p>Freie Trauung um 15:30 Uhr.</p></article>
+            <article class="detail-card"><span class="detail-label">Traurednerin</span><h3>Wiebke Mühling</h3><p>Freie Trauung um 15:30 Uhr.</p><div class="contact-actions"><a class="team-link-button" href="https://www.instagram.com/w.moments_trauungen/" target="_blank" rel="noopener">Instagram öffnen</a></div></article>
             <article class="detail-card"><span class="detail-label">DJ</span><h3>Marco Leistner</h3><p>Start um 17:00 Uhr.</p><p>Verantwortlich für Musik, Ton, Licht und die vereinbarten Effekte.</p></article>
-            <article class="detail-card"><span class="detail-label">Fotograf</span><h3>Tito</h3><p>Instagram: <a href="https://www.instagram.com/tito.graf/" target="_blank" rel="noopener">@tito.graf</a></p><p>Start um 14:00 Uhr, voraussichtliches Ende zwischen 00:00 und 00:30 Uhr.</p></article>
+            <article class="detail-card"><span class="detail-label">Fotograf</span><h3>Tito</h3><p>Start um 14:00 Uhr, voraussichtliches Ende zwischen 00:00 und 00:30 Uhr.</p><div class="contact-actions"><a class="team-link-button" href="https://www.instagram.com/tito.graf/" target="_blank" rel="noopener">Instagram öffnen</a></div></article>
             <article class="detail-card"><span class="detail-label">Location</span><h3>Herr Ferrari</h3><p>Ansprechpartner im Löwenhof und morgens vor Ort.</p></article>
             <article class="detail-card pending-card"><span class="detail-label">Floristik</span><h3>Noch in Klärung</h3><p>Dienstleister und genaue Aufgabenverteilung werden später ergänzt.</p></article>
           </div>
         </div>
       </details>
 
-      <details>
+      <details id="location">
         <summary><span>Location & Anfahrt</span><span class="summary-icon">+</span></summary>
         <div class="accordion-content">
           <div class="location-team-grid">
-            <div><span class="detail-label">Location</span><h3>Löwenhof Lohfelden</h3><p>Bachstraße 36<br>34253 Lohfelden</p><div class="button-row"><a class="text-button secondary" href="https://www.google.com/maps/dir/?api=1&destination=Bachstra%C3%9Fe+36%2C+34253+Lohfelden" target="_blank" rel="noopener">Route öffnen</a></div></div>
+            <div><span class="detail-label">Location</span><h3>Löwenhof Lohfelden</h3><p>Bachstraße 36<br>34253 Lohfelden</p><div class="contact-actions"><a class="team-link-button" href="https://www.google.com/maps/dir/?api=1&destination=Bachstra%C3%9Fe+36%2C+34253+Lohfelden" target="_blank" rel="noopener">Route öffnen</a></div></div>
             <iframe class="map-frame" title="Karte zum Löwenhof Lohfelden" src="https://www.google.com/maps?q=Bachstra%C3%9Fe%2036%2C%2034253%20Lohfelden&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div class="fact-list">
@@ -95,7 +107,7 @@
         </div>
       </details>
 
-      <details>
+      <details id="aufbau">
         <summary><span>Aufbau & Dekoration</span><span class="summary-icon">+</span></summary>
         <div class="accordion-content"><div class="fact-list">
           <div><strong>Aufbaustart:</strong><span>Voraussichtlich ab 09:00 Uhr.</span></div>
@@ -112,7 +124,7 @@
         </div></div>
       </details>
 
-      <details>
+      <details id="trauung">
         <summary><span>Freie Trauung</span><span class="summary-icon">+</span></summary>
         <div class="accordion-content"><div class="fact-list">
           <div><strong>Ort:</strong><span>Draußen direkt vor dem Eingang des Löwenhofs.</span></div>
@@ -130,7 +142,7 @@
         </div></div>
       </details>
 
-      <details>
+      <details id="feier">
         <summary><span>Empfang & Feier</span><span class="summary-icon">+</span></summary>
         <div class="accordion-content"><div class="fact-list">
           <div><strong>Empfang:</strong><span>Direkt nach der Trauung mit Fingerfood und Getränken.</span></div>
@@ -149,7 +161,7 @@
         </div></div>
       </details>
 
-      <details>
+      <details id="technik">
         <summary><span>Technik & besondere Effekte</span><span class="summary-icon">+</span></summary>
         <div class="accordion-content"><div class="fact-list">
           <div><strong>DJ-Technik:</strong><span>Komplettes DJ-Equipment sowie eine Outdoor-Box für den Außenbereich.</span></div>
@@ -167,7 +179,7 @@
         </div></div>
       </details>
 
-      <details>
+      <details id="offene-punkte">
         <summary><span>Offene Punkte</span><span class="summary-icon">+</span></summary>
         <div class="accordion-content"><div class="fact-list">
           <div><strong>Trauzeugen:</strong><span>Telefonnummern und genaue Aufgabenverteilung mit André und Milena abstimmen.</span></div>
@@ -185,5 +197,13 @@
       </details>
     </section>
   </main>
+  <script>
+    document.querySelectorAll('.team-quick-nav a').forEach((link) => {
+      link.addEventListener('click', () => {
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) target.open = true;
+      });
+    });
+  </script>
 </body>
 </html>
