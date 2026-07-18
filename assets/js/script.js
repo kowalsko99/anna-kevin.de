@@ -1,5 +1,6 @@
 const dialog = document.querySelector("#login-dialog");
 const dialogTitle = document.querySelector("#dialog-title");
+const dialogText = document.querySelector("#dialog-text");
 const passwordInput = document.querySelector("#password");
 const formMessage = document.querySelector("#form-message");
 const closeButton = document.querySelector("#close-dialog");
@@ -7,9 +8,15 @@ const form = document.querySelector(".login-form");
 const countdownDays = document.querySelector("#countdown-days");
 const countdownLabel = document.querySelector(".countdown-label");
 
-const portalNames = {
-  guest: "Gästebereich",
-  service: "Hochzeitsteam"
+const portalContent = {
+  guest: {
+    title: "Gästebereich öffnen",
+    text: "Bitte gebt das Passwort ein, das ihr mit eurer Einladung erhalten habt."
+  },
+  service: {
+    title: "Hochzeitsteam öffnen",
+    text: "Bitte gebt das Passwort für den internen Organisationsbereich ein."
+  }
 };
 
 const portalPasswords = {
@@ -45,11 +52,14 @@ function updateCountdown() {
 
 updateCountdown();
 
-if (dialog && dialogTitle && passwordInput && formMessage && closeButton && form) {
+if (dialog && dialogTitle && dialogText && passwordInput && formMessage && closeButton && form) {
   document.querySelectorAll("[data-portal]").forEach((button) => {
     button.addEventListener("click", () => {
       activePortal = button.dataset.portal;
-      dialogTitle.textContent = portalNames[activePortal];
+      const content = portalContent[activePortal];
+
+      dialogTitle.textContent = content?.title || "Portal öffnen";
+      dialogText.textContent = content?.text || "Bitte gebt das Passwort ein.";
       passwordInput.value = "";
       formMessage.textContent = "";
       dialog.showModal();
