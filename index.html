@@ -3,72 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Die Hochzeit von Anna und Kevin am 20. Mai 2028">
-  <meta name="theme-color" content="#eee7df">
-  <title>Anna &amp; Kevin | 20.05.2028</title>
+  <meta name="description" content="Hochzeitsportal von Anna und Kevin">
+  <title>Anna & Kevin | 20.05.2028</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&amp;family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=10">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=4">
 </head>
-<body class="landing-body">
+<body>
   <main class="landing">
-    <div class="landing-orbit orbit-one" aria-hidden="true"></div>
-    <div class="landing-orbit orbit-two" aria-hidden="true"></div>
-
-    <section class="hero" aria-labelledby="couple-name">
-      <div class="monogram" aria-hidden="true"><span>A</span><i>&amp;</i><span>K</span></div>
-      <p class="eyebrow">Wir heiraten</p>
-      <h1 id="couple-name">
-        <span>Anna</span>
-        <span class="ampersand">&amp;</span>
-        <span>Kevin</span>
-      </h1>
-      <p class="date"><span>20</span><i></i><span>05</span><i></i><span>2028</span></p>
-
+    <section class="hero">
+      <p class="eyebrow">Willkommen bei</p>
+      <h1><span>Anna</span><span class="ampersand">&amp;</span><span>Kevin</span></h1>
+      <p class="date">20.05.2028</p>
+      <div class="divider"></div>
       <p class="intro">
-        Ein Tag, auf den wir uns schon heute riesig freuen – besonders, weil wir ihn mit euch feiern dürfen.
+        <span>Wir freuen uns, diesen besonderen Tag gemeinsam mit euch zu feiern.</span>
+        <span>Hier findet ihr alle wichtigen Informationen rund um unsere Hochzeit.</span>
       </p>
 
       <div class="countdown" aria-live="polite">
         <span class="countdown-number" id="countdown-days">–</span>
-        <span class="countdown-copy">
-          <span class="countdown-label">Tage</span>
-          <span>bis wir Ja sagen</span>
-        </span>
+        <span class="countdown-label">Tage bis zu unserer Hochzeit</span>
       </div>
 
-      <button class="guest-entry" type="button" data-portal="guest">
-        <span class="guest-entry-kicker">Für unsere Gäste</span>
-        <span class="guest-entry-title">Eure Einladung beginnt hier</span>
-        <span class="guest-entry-action">Mit Passwort öffnen <span aria-hidden="true">→</span></span>
-      </button>
+      <div class="portal-grid">
+        <button class="portal-card" type="button" data-portal="guest">
+          <span class="portal-title">Gäste</span>
+          <span class="portal-description">Ablauf, Anreise, Übernachtung, Zu- oder Absage und weitere Informationen</span>
+          <span class="portal-link">Bereich öffnen →</span>
+        </button>
 
-      <button class="team-entry" type="button" data-portal="service">
-        Zum internen Bereich des Hochzeitsteams
-      </button>
+        <button class="portal-card" type="button" data-portal="service">
+          <span class="portal-title">Hochzeitsteam</span>
+          <span class="portal-description">Interner Ablauf und organisatorische Informationen für Trauzeugen und Dienstleister</span>
+          <span class="portal-link">Bereich öffnen →</span>
+        </button>
+      </div>
     </section>
   </main>
-
-  <footer class="landing-footer">
-    <span>Anna &amp; Kevin</span>
-    <span aria-hidden="true">·</span>
-    <span>20. Mai 2028</span>
-  </footer>
 
   <dialog class="login-dialog" id="login-dialog">
     <form class="login-form" method="dialog">
       <button class="close-button" type="button" id="close-dialog" aria-label="Fenster schließen">×</button>
-      <p class="dialog-eyebrow">Geschützter Bereich</p>
       <h2 id="dialog-title">Portal öffnen</h2>
       <p class="dialog-text" id="dialog-text">Bitte gebt das Passwort ein, das ihr von uns erhalten habt.</p>
       <label for="password">Passwort</label>
       <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Passwort eingeben">
       <p class="form-message" id="form-message" aria-live="polite"></p>
-      <button class="submit-button" type="submit">Bereich öffnen</button>
+      <button class="submit-button" type="submit">Öffnen</button>
     </form>
   </dialog>
 
-  <script src="assets/js/script.js?v=10"></script>
+  <script src="assets/js/script.js?v=7"></script>
 </body>
 </html>
