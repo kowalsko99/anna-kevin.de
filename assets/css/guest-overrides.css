@@ -99,3 +99,49 @@
     padding: 20px 16px;
   }
 }
+
+
+/* Der Hinweis zur handyfreien Trauung soll bewusst nicht übersehen werden. */
+.unplugged-banner {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid rgba(155,125,132,.5);
+  background:
+    linear-gradient(135deg, rgba(155,125,132,.13), rgba(255,255,255,.58));
+}
+
+.unplugged-banner .info-label {
+  display: inline-flex;
+  padding: 7px 11px;
+  border-radius: 999px;
+  color: #fff;
+  background: var(--accent);
+  letter-spacing: .16em;
+}
+
+.unplugged-banner h2 {
+  margin-top: 13px;
+  font-size: clamp(2.6rem, 5vw, 3.6rem);
+  line-height: .95;
+}
+
+.unplugged-banner p strong,
+.unplugged-banner p span {
+  display: block;
+}
+
+.unplugged-banner p strong {
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.unplugged-banner p span {
+  margin-top: 11px;
+}
+
+@media (max-width: 680px) {
+  .unplugged-banner {
+    gap: 18px;
+  }
+}
