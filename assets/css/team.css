@@ -251,3 +251,36 @@
   .timeline-highlight::before { top: 30px; left: 7px; }
   .timeline-time { padding-top: 0; text-align: left; }
 }
+
+.team-open-callout {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 30px;
+  align-items: center;
+  margin: 18px 0 30px;
+  padding: 28px 32px;
+  border: 1px solid rgba(155,125,132,.42);
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, rgba(155,125,132,.12), rgba(255,255,255,.45));
+  box-shadow: var(--shadow);
+}
+
+.team-open-callout h2 {
+  margin-top: 9px;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.team-open-callout p {
+  margin: 0 0 16px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 680px) {
+  .team-open-callout {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 24px;
+  }
+}
