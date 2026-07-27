@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=7">
-  <link rel="stylesheet" href="assets/css/guest-overrides.css?v=2">
+  <link rel="stylesheet" href="assets/css/style.css?v=8">
+  <link rel="stylesheet" href="assets/css/guest-overrides.css?v=3">
 </head>
 <body>
   <main class="guest-page">
@@ -55,7 +55,7 @@
         <span class="info-label">Wichtiger Hinweis</span>
         <h2>Unplugged Ceremony</h2>
       </div>
-      <p>Während unserer freien Trauung bitten wir euch ausdrücklich darum, auf Handys, Kameras und eigene Fotos zu verzichten. Unser Fotograf hält alle wichtigen Momente für uns fest.</p>
+      <p><strong>Bitte lasst eure Handys und Kameras während der gesamten freien Trauung vollständig verstaut.</strong><span>Unser Fotograf hält alle wichtigen Momente für uns fest. Nach der Trauung dürft ihr selbstverständlich sehr gerne fotografieren.</span></p>
     </aside>
 
     <section class="accordion-list" aria-label="Weitere Informationen">
@@ -115,10 +115,11 @@
           <div class="form-panel">
             <span class="info-label">Eure Rückmeldung</span>
             <h3>Seid ihr dabei?</h3>
-            <p>Bitte gebt uns spätestens bis zum <strong>09.04.2028</strong> Bescheid.</p>
+            <p>Bitte gebt uns spätestens bis zum <strong>09.04.2028</strong> Bescheid. Eine Rückmeldung pro Haushalt reicht vollkommen aus.</p>
             <form class="guest-form" data-demo-form>
               <div class="form-grid">
-                <label>Vor- und Nachname<input type="text" name="name" required></label>
+                <label>Vor- und Nachname<input type="text" name="name" autocomplete="name" required></label>
+                <label>E-Mail-Adresse für die Bestätigung<input type="email" name="email" autocomplete="email" required></label>
                 <label>Rückmeldung<select name="status" required><option value="">Bitte auswählen</option><option>Zusage</option><option>Absage</option></select></label>
                 <label>Anzahl aller teilnehmenden Personen<input type="number" name="persons" min="0" required></label>
                 <label class="full-width">Namen aller Begleitpersonen und Kinder<textarea name="companions" rows="3"></textarea></label>

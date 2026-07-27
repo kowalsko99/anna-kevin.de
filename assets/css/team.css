@@ -251,3 +251,91 @@
   .timeline-highlight::before { top: 30px; left: 7px; }
   .timeline-time { padding-top: 0; text-align: left; }
 }
+
+.team-open-callout {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 30px;
+  align-items: center;
+  margin: 18px 0 30px;
+  padding: 28px 32px;
+  border: 1px solid rgba(155,125,132,.42);
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, rgba(155,125,132,.12), rgba(255,255,255,.45));
+  box-shadow: var(--shadow);
+}
+
+.team-open-callout h2 {
+  margin-top: 9px;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.team-open-callout p {
+  margin: 0 0 16px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 680px) {
+  .team-open-callout {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 24px;
+  }
+}
+
+/* Visuelle Status-Hierarchie für die bestehende Planung */
+.team-info-card,
+.detail-card,
+.timeline-item {
+  transition: transform .2s ease, border-color .2s ease, background .2s ease;
+}
+
+.team-info-card:hover,
+.detail-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(155,125,132,.34);
+  background: rgba(255,255,255,.54);
+}
+
+.team-open-callout {
+  border-width: 2px;
+}
+
+.team-open-callout .team-link-button {
+  color: #fff;
+  background: var(--text);
+}
+
+.timeline-highlight {
+  box-shadow: inset 4px 0 0 var(--accent);
+}
+
+.timeline-pending {
+  border-style: dashed;
+  background: rgba(255,255,255,.18);
+}
+
+#offene-punkte {
+  border-color: rgba(155,125,132,.44);
+}
+
+#offene-punkte[open] {
+  background: rgba(155,125,132,.07);
+  box-shadow: inset 3px 0 0 var(--accent), var(--shadow);
+}
+
+.pending-card {
+  border-style: dashed;
+}
+
+@media (max-width: 680px) {
+  .team-quick-nav {
+    position: sticky;
+    z-index: 6;
+    top: 8px;
+    background: rgba(245,241,236,.9);
+    backdrop-filter: blur(18px);
+  }
+}
