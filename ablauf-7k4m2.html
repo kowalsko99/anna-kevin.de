@@ -3,212 +3,218 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Interner Organisationsbereich für das Hochzeitsteam von Anna und Kevin">
-  <meta name="theme-color" content="#24211f">
-  <title>Hochzeitsteam | Anna &amp; Kevin</title>
+  <meta name="description" content="Organisationsbereich für das Hochzeitsteam von Anna und Kevin">
+  <title>Hochzeitsteam | Anna & Kevin</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=10">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=8">
+  <link rel="stylesheet" href="assets/css/team.css?v=5">
 </head>
-<body class="team-body">
-  <header class="team-header">
-    <a class="brand brand-light" href="index.html" aria-label="Zur Startseite"><span>A</span><i>&amp;</i><span>K</span></a>
-    <div>
-      <span>Interner Bereich</span>
-      <strong>Hochzeitsteam</strong>
-    </div>
-    <a href="#offen">Offene Punkte <b>11</b></a>
-  </header>
+<body>
+  <main class="team-page">
+    <header class="team-hero">
+      <a class="team-back-link" href="index.html">← Zurück zur Startseite</a>
+      <p class="team-kicker">Anna & Kevin</p>
+      <h1 class="team-title">Damit unser Tag rund läuft</h1>
+      <p class="team-subtitle">20. Mai 2028 · Löwenhof Lohfelden</p>
+    </header>
 
-  <main class="team-main">
-    <section class="team-intro">
-      <div>
-        <p class="eyebrow">Samstag · 20. Mai 2028</p>
-        <h1>Damit unser Tag<br><em>rund läuft.</em></h1>
-      </div>
-      <p>Der gemeinsame Stand für Trauzeugen und Dienstleister: relevante Zeiten, klare Zuständigkeiten und alle noch offenen Entscheidungen an einem Ort.</p>
+    <section class="team-info-grid" aria-label="Wichtige Eckdaten">
+      <article class="team-info-card"><span class="team-info-label">Freie Trauung</span><h2>15:30 Uhr</h2><p>Beginn der freien Trauung im Löwenhof Lohfelden.</p></article>
+      <article class="team-info-card"><span class="team-info-label">Location</span><h2>Löwenhof Lohfelden</h2><p>Bachstraße 36<br>34253 Lohfelden</p></article>
+      <article class="team-info-card"><span class="team-info-label">Veranstaltungsende</span><h2>Bis maximal 04:00 Uhr</h2><p>Der genaue Ablauf bis zum Ende wird später gemeinsam abgestimmt.</p></article>
+      <article class="team-info-card"><span class="team-info-label">Wichtige Kontakte</span><h2>Anna, Kevin & Trauzeugen</h2><p>Kontaktdaten und Zuständigkeiten sind weiter unten gesammelt.</p></article>
     </section>
 
-    <nav class="team-nav" aria-label="Bereiche">
-      <a href="#offen">Offene Punkte</a>
+    <nav class="team-quick-nav" aria-label="Schnellnavigation">
       <a href="#zeitplan">Zeitplan</a>
-      <a href="#rollen">Zuständigkeiten</a>
       <a href="#kontakte">Kontakte</a>
-      <a href="#details">Details</a>
+      <a href="#dienstleister">Dienstleister</a>
+      <a href="#location">Location</a>
+      <a href="#aufbau">Aufbau</a>
+      <a href="#trauung">Trauung</a>
+      <a href="#feier">Feier</a>
+      <a href="#technik">Technik</a>
+      <a href="#offene-punkte">Offene Punkte</a>
     </nav>
 
-    <section class="team-status" aria-label="Wichtige Eckdaten">
-      <article><span>Aufbau</span><strong>ab 09:00</strong><small>fertig bis 13:30 Uhr</small></article>
-      <article><span>Trauung</span><strong>15:30</strong><small>Löwenhof Lohfelden</small></article>
-      <article><span>DJ</span><strong>ab 17:00</strong><small>Technik, Ton und Licht</small></article>
-      <article><span>Feier</span><strong>bis 04:00</strong><small>spätestes Veranstaltungsende</small></article>
-    </section>
+    <aside class="team-open-callout">
+      <div>
+        <span class="team-info-label">Planungsstand</span>
+        <h2>11 Punkte sind noch offen</h2>
+      </div>
+      <div>
+        <p>Hier stehen die Entscheidungen, die als Nächstes gemeinsam abgestimmt werden sollten.</p>
+        <a class="team-link-button" href="#offene-punkte">Offene Punkte ansehen</a>
+      </div>
+    </aside>
 
-    <section class="open-section" id="offen" aria-labelledby="open-title">
-      <div class="team-section-heading">
-        <div><p class="eyebrow">Zuerst klären</p><h2 id="open-title">Offene Entscheidungen</h2></div>
-        <p>Diese Punkte beeinflussen den Ablauf und sollten als Nächstes bestätigt werden.</p>
-      </div>
-      <div class="open-grid">
-        <article class="priority-high">
-          <span class="status-pill">Priorität</span>
-          <h3>Zugang &amp; Lautstärke</h3>
-          <p>Zugang ab 09:00 Uhr und Lautstärkereduzierung ab 22:00 oder 24:00 Uhr mit der Location bestätigen.</p>
-          <small>Verantwortlich: Kevin · Location</small>
-        </article>
-        <article class="priority-high">
-          <span class="status-pill">Priorität</span>
-          <h3>Aufbauteam festlegen</h3>
-          <p>Finale Personen, Aufgabenverteilung und Reihenfolge für Dekoration und Floristik bestimmen.</p>
-          <small>Verantwortlich: Kevin · Trauzeugen</small>
-        </article>
-        <article>
-          <span class="status-pill">Abstimmung</span>
-          <h3>Ablauf der Trauung</h3>
-          <p>Dauer, Musik, mögliche Rituale, Ringträger und Übergabe der Eheversprechen klären.</p>
-          <small>Verantwortlich: Anna &amp; Kevin · Wiebke</small>
-        </article>
-        <article>
-          <span class="status-pill">Abstimmung</span>
-          <h3>Fotos koordinieren</h3>
-          <p>Ort des Brautpaarshootings sowie Zeitpunkt und Reihenfolge der Gruppenfotos festlegen.</p>
-          <small>Verantwortlich: Brautpaar · Tito · Trauzeugen</small>
-        </article>
-        <article>
-          <span class="status-pill">Abstimmung</span>
-          <h3>Empfang &amp; Rückkehr</h3>
-          <p>Ablauf während des Shootings und geplante Rückkehrzeit des Brautpaars bestimmen.</p>
-          <small>Verantwortlich: Trauzeugen · Location</small>
-        </article>
-        <article>
-          <span class="status-pill">Ergänzen</span>
-          <h3>Kontakte &amp; Floristik</h3>
-          <p>Telefonnummern der Trauzeugen ergänzen und Floristik samt Aufgabenverteilung final festlegen.</p>
-          <small>Verantwortlich: Anna &amp; Kevin</small>
-        </article>
-      </div>
-    </section>
-
-    <section class="schedule-section" id="zeitplan" aria-labelledby="schedule-title">
-      <div class="team-section-heading">
-        <div><p class="eyebrow">Der rote Faden</p><h2 id="schedule-title">Zeitplan</h2></div>
-        <p>Mit „ca.“ markierte Zeiten werden später final abgestimmt.</p>
-      </div>
-
-      <div class="team-schedule">
-        <article><time>09:00</time><div><span>Aufbau</span><h3>Floristik &amp; Dekoration</h3><p>Aufbau im Löwenhof; vollständige Fertigstellung spätestens um 13:30 Uhr.</p></div><b>offen</b></article>
-        <article><time>14:00</time><div><span>Fotografie</span><h3>Start der Reportage</h3><p>Tito begleitet das restliche Getting Ready der Braut.</p></div><b class="confirmed">bestätigt</b></article>
-        <article><time>15:00</time><div><span>Gäste</span><h3>Ankunft &amp; Platznehmen</h3><p>Trauzeugen unterstützen beim Empfang und weisen bei Bedarf die Plätze.</p></div><b class="confirmed">bestätigt</b></article>
-        <article class="schedule-highlight"><time>15:30</time><div><span>Hauptmoment</span><h3>Freie Trauung</h3><p>Mit Wiebke Mühling vor dem Löwenhof; Schlechtwetteroption im Innenbereich.</p></div><b>Details offen</b></article>
-        <article><time>danach</time><div><span>Empfang</span><h3>Fingerfood &amp; Brautpaarshooting</h3><p>Gäste bleiben vor Ort. Gruppenfotos und Shooting-Reihenfolge werden noch abgestimmt.</p></div><b>offen</b></article>
-        <article><time>17:00</time><div><span>Musik</span><h3>Start des DJs</h3><p>Marco übernimmt Musik, Ton, Licht und vereinbarte Effekte.</p></div><b class="confirmed">bestätigt</b></article>
-        <article><time>ca. 18:15</time><div><span>Begrüßung</span><h3>Kevins Rede</h3><p>Kurze Begrüßung vor dem gemeinsamen Essen.</p></div><b>ca.</b></article>
-        <article><time>ca. 18:30</time><div><span>Essen</span><h3>Gemeinsames Abendessen</h3><p>Geplanter Beginn mit Vorsuppe.</p></div><b>ca.</b></article>
-        <article><time>ca. 22:00</time><div><span>Tanzfläche</span><h3>Hochzeitstanz</h3><p>Mit Bodennebel und Kaltfunken, anschließend Eröffnung der Tanzfläche.</p></div><b>ca.</b></article>
-        <article><time>ca. 23:30</time><div><span>Torte</span><h3>Hochzeitstorte</h3><p>Anschnitt und Ausgabe der Hochzeitstorte.</p></div><b>ca.</b></article>
-        <article><time>04:00</time><div><span>Ende</span><h3>Veranstaltungsende</h3><p>Die Feier endet spätestens um 04:00 Uhr.</p></div><b class="confirmed">bestätigt</b></article>
-      </div>
-    </section>
-
-    <section class="roles-section" id="rollen" aria-labelledby="roles-title">
-      <div class="team-section-heading">
-        <div><p class="eyebrow">Wer macht was?</p><h2 id="roles-title">Zuständigkeiten</h2></div>
-        <p>Eine klare erste Zuordnung. Feinheiten werden nach den offenen Abstimmungen ergänzt.</p>
-      </div>
-      <div class="role-table" role="table" aria-label="Zuständigkeiten">
-        <div class="role-row role-head" role="row"><span>Person</span><span>Hauptaufgaben</span><span>Status</span></div>
-        <div class="role-row" role="row"><strong>Kevin</strong><span>Deko &amp; Aufbau, Übergaben, Begrüßung, Notfallkontakt</span><b>aktiv</b></div>
-        <div class="role-row" role="row"><strong>Anna</strong><span>Persönliche Rückfragen, Übergaben und finale Gestaltungsentscheidungen</span><b>aktiv</b></div>
-        <div class="role-row" role="row"><strong>André</strong><span>Gästeempfang, Geschenkeplanung, Gruppenfotos, Notfallkontakt</span><b>Details offen</b></div>
-        <div class="role-row" role="row"><strong>Milena</strong><span>Gästeempfang, Geschenkeplanung, Gruppenfotos, Notfallkontakt</span><b>Details offen</b></div>
-        <div class="role-row" role="row"><strong>Marco</strong><span>DJ, Ton, Licht, Effekte und musikalische Ankündigungen</span><b>bestätigt</b></div>
-        <div class="role-row" role="row"><strong>Wiebke</strong><span>Freie Trauung, Mikrofon und Lautsprecher für die Zeremonie</span><b>bestätigt</b></div>
-      </div>
-    </section>
-
-    <section class="contacts-section" id="kontakte" aria-labelledby="contacts-title">
-      <div class="team-section-heading">
-        <div><p class="eyebrow">Direkter Draht</p><h2 id="contacts-title">Kontakte</h2></div>
-        <p>Private Telefonnummern werden erst ergänzt, sobald der Bereich technisch geschützt ist.</p>
-      </div>
-      <div class="team-contact-grid">
-        <article><span>Brautpaar</span><h3>Anna &amp; Kevin</h3><p>Entscheidungen, Freigaben und Notfälle</p></article>
-        <article><span>Trauzeugen</span><h3>André &amp; Milena</h3><p>Gäste, Überraschungen und Koordination</p></article>
-        <article><span>Traurednerin</span><h3>Wiebke Mühling</h3><a href="https://www.instagram.com/w.moments_trauungen/" target="_blank" rel="noopener">Instagram öffnen →</a></article>
-        <article><span>Fotograf</span><h3>Tito</h3><a href="https://www.instagram.com/tito.graf/" target="_blank" rel="noopener">Instagram öffnen →</a></article>
-        <article><span>DJ</span><h3>Marco Leistner</h3><p>Musik, Technik, Licht und Effekte</p></article>
-        <article><span>Location</span><h3>Herr Ferrari</h3><p>Ansprechpartner im Löwenhof</p></article>
-      </div>
-    </section>
-
-    <section class="team-details" id="details" aria-labelledby="details-team-title">
-      <div class="team-section-heading">
-        <div><p class="eyebrow">Zum Nachschlagen</p><h2 id="details-team-title">Alle Details</h2></div>
-        <p>Informationen, die am Hochzeitstag schnell auffindbar sein müssen.</p>
-      </div>
-
-      <div class="team-accordion">
-        <details>
-          <summary><strong>Location &amp; Logistik</strong><i>+</i></summary>
-          <div class="team-detail-grid">
-            <p><b>Adresse</b><span>Löwenhof Lohfelden, Bachstraße 36, 34253 Lohfelden</span></p>
-            <p><b>Zugang</b><span>Voraussichtlich ab 09:00 Uhr; Herr Ferrari ist morgens vor Ort.</span></p>
-            <p><b>Parken</b><span>Alle Fahrzeuge nutzen den regulären Gästeparkplatz.</span></p>
-            <p><b>Getting Ready</b><span>Im Hotel zur Post.</span></p>
-            <p><b>Lagerung</b><span>Zwischenraum zum Hinterausgang; keine separate Lagerfläche.</span></p>
-            <p><b>Einschränkungen</b><span>Kein Konfetti, kein Feuerwerk; Lautstärke-Regelung noch bestätigen.</span></p>
+    <section class="accordion-list" aria-label="Organisation des Hochzeitstages">
+      <details id="zeitplan">
+        <summary><span>Gesamtzeitplan</span><span class="summary-icon">+</span></summary>
+        <div class="accordion-content">
+          <p class="timeline-intro">Der Ablauf enthält bereits alle bekannten Zeiten. Mit „ca.“ gekennzeichnete Punkte werden später noch final abgestimmt.</p>
+          <div class="team-timeline">
+            <article class="timeline-item"><div class="timeline-time">Ab 09:00 Uhr</div><div class="timeline-details"><span class="timeline-label">Aufbau</span><h3>Floristik & Dekoration</h3><p>Aufbau der Floristik und Dekoration im Löwenhof. Die genaue Aufgabenverteilung und Reihenfolge werden noch festgelegt.</p></div></article>
+            <article class="timeline-item"><div class="timeline-time">14:00 Uhr</div><div class="timeline-details"><span class="timeline-label">Fotograf</span><h3>Start der Fotoreportage</h3><p>Der Fotograf begleitet das restliche Getting Ready der Braut.</p></div></article>
+            <article class="timeline-item"><div class="timeline-time">Ab 15:00 Uhr</div><div class="timeline-details"><span class="timeline-label">Gäste</span><h3>Ankunft der Gäste</h3><p>Die Gäste treffen am Löwenhof ein und nehmen ihre Plätze für die freie Trauung ein.</p></div></article>
+            <article class="timeline-item timeline-highlight"><div class="timeline-time">15:30 Uhr</div><div class="timeline-details"><span class="timeline-label">Hauptmoment</span><h3>Freie Trauung mit Wiebke Mühling</h3><p>Beginn der freien Trauung im Löwenhof.</p></div></article>
+            <article class="timeline-item"><div class="timeline-time">Im Anschluss</div><div class="timeline-details"><span class="timeline-label">Empfang</span><h3>Empfang der Gäste & Brautpaarshooting</h3><p>Die Gäste werden am Löwenhof empfangen. Anna und Kevin fahren währenddessen für das Brautpaarshooting zu einer noch festzulegenden Location.</p></div></article>
+            <article class="timeline-item timeline-pending"><div class="timeline-time">Danach</div><div class="timeline-details"><span class="timeline-label">Fotos</span><h3>Gruppenfotos an der Location</h3><p>Nach dem Brautpaarshooting folgen die Gruppenfotos wieder am Löwenhof. Die genaue Reihenfolge wird noch abgestimmt.</p></div></article>
+            <article class="timeline-item"><div class="timeline-time">17:00 Uhr</div><div class="timeline-details"><span class="timeline-label">DJ</span><h3>Start des DJs</h3><p>Ab diesem Zeitpunkt begleitet der DJ den weiteren Verlauf des Abends.</p></div></article>
+            <article class="timeline-item"><div class="timeline-time">Ca. 18:15 Uhr</div><div class="timeline-details"><span class="timeline-label">Rede</span><h3>Begrüßung durch Kevin</h3><p>Kurze Begrüßung und Rede vor dem gemeinsamen Essen.</p></div></article>
+            <article class="timeline-item"><div class="timeline-time">Ca. 18:30 Uhr</div><div class="timeline-details"><span class="timeline-label">Essen</span><h3>Gemeinsames Abendessen</h3><p>Geplanter Beginn mit Vorsuppe.</p></div></article>
+            <article class="timeline-item"><div class="timeline-time">Ca. 22:00 Uhr</div><div class="timeline-details"><span class="timeline-label">Tanzfläche</span><h3>Hochzeitstanz</h3><p>Geplanter Hochzeitstanz und anschließende Eröffnung der Tanzfläche.</p></div></article>
+            <article class="timeline-item"><div class="timeline-time">Ca. 23:30 Uhr</div><div class="timeline-details"><span class="timeline-label">Torte</span><h3>Hochzeitstorte</h3><p>Geplanter Anschnitt und Ausgabe der Hochzeitstorte.</p></div></article>
+            <article class="timeline-item timeline-pending"><div class="timeline-time">Ca. 00:00–00:30 Uhr</div><div class="timeline-details"><span class="timeline-label">Fotograf</span><h3>Voraussichtliches Ende der Fotoreportage</h3><p>Die genaue Endzeit wird mit dem Fotografen noch final abgestimmt.</p></div></article>
+            <article class="timeline-item"><div class="timeline-time">Bis 04:00 Uhr</div><div class="timeline-details"><span class="timeline-label">Ende</span><h3>Veranstaltungsende</h3><p>Die Feier endet spätestens um 04:00 Uhr.</p></div></article>
           </div>
-        </details>
-        <details>
-          <summary><strong>Aufbau &amp; Dekoration</strong><i>+</i></summary>
-          <div class="team-detail-grid">
-            <p><b>Start</b><span>Voraussichtlich ab 09:00 Uhr.</span></p>
-            <p><b>Fertigstellung</b><span>Spätestens um 13:30 Uhr.</span></p>
-            <p><b>Eigenleistung</b><span>Dekoration und Floristik werden selbst aufgebaut.</span></p>
-            <p><b>Location</b><span>Übernimmt Geschirr, Mobiliar und übrigen Aufbau.</span></p>
-            <p><b>DJ</b><span>Übernimmt seine komplette Technik.</span></p>
-            <p><b>Abbau</b><span>Am Folgetag durch Ehepaar und Trauzeugen.</span></p>
+        </div>
+      </details>
+
+      <details id="kontakte">
+        <summary><span>Kontakte & Zuständigkeiten</span><span class="summary-icon">+</span></summary>
+        <div class="accordion-content">
+          <div class="detail-grid">
+            <article class="detail-card"><span class="detail-label">Brautpaar</span><h3>Kevin Wenzel</h3><p>Deko und Aufbau, Übergabe von Geschenken und Karten, Notfallkontakt.</p><div class="contact-actions"><a class="team-link-button" href="tel:+491734360073">Anrufen</a></div></article>
+            <article class="detail-card"><span class="detail-label">Brautpaar</span><h3>Anna</h3><p>Übergabe von Geschenken und Karten sowie Ansprechpartnerin für persönliche Rückfragen.</p><div class="contact-actions"><a class="team-link-button" href="tel:+4916098047144">Anrufen</a></div></article>
+            <article class="detail-card pending-card"><span class="detail-label">Trauzeuge</span><h3>André Wenzel</h3><p>Telefonnummer folgt nach Absprache.</p><p>Geschenkeplanung, Gästeempfang, Gruppenfotos und Notfallkontakt.</p></article>
+            <article class="detail-card pending-card"><span class="detail-label">Trauzeugin</span><h3>Milena Hildebrandt</h3><p>Telefonnummer folgt nach Absprache.</p><p>Geschenkeplanung, Gästeempfang, Gruppenfotos und Notfallkontakt.</p></article>
           </div>
-        </details>
-        <details>
-          <summary><strong>Freie Trauung</strong><i>+</i></summary>
-          <div class="team-detail-grid">
-            <p><b>Ort</b><span>Draußen vor dem Eingang; bei Regen im Innenbereich.</span></p>
-            <p><b>Dauer</b><span>Voraussichtlich 45 bis 60 Minuten.</span></p>
-            <p><b>Einzug</b><span>Anna wird von ihrem Vater Frank begleitet.</span></p>
-            <p><b>Technik</b><span>Wiebke bringt Mikrofon und Lautsprecher mit.</span></p>
-            <p><b>Ringe</b><span>Ringträger noch verbindlich festlegen.</span></p>
-            <p><b>Sitzordnung</b><span>Fünf Plätze je Seite und Reihe; enge Familie und Trauzeugen nach vorne.</span></p>
+          <p class="section-note">Die genaue Aufteilung einzelner Aufgaben wird später gemeinsam mit den Trauzeugen festgelegt.</p>
+        </div>
+      </details>
+
+      <details id="dienstleister">
+        <summary><span>Dienstleister</span><span class="summary-icon">+</span></summary>
+        <div class="accordion-content">
+          <div class="detail-grid">
+            <article class="detail-card"><span class="detail-label">Traurednerin</span><h3>Wiebke Mühling</h3><p>Freie Trauung um 15:30 Uhr.</p><div class="contact-actions"><a class="team-link-button" href="https://www.instagram.com/w.moments_trauungen/" target="_blank" rel="noopener">Instagram öffnen</a></div></article>
+            <article class="detail-card"><span class="detail-label">DJ</span><h3>Marco Leistner</h3><p>Start um 17:00 Uhr.</p><p>Verantwortlich für Musik, Ton, Licht und die vereinbarten Effekte.</p></article>
+            <article class="detail-card"><span class="detail-label">Fotograf</span><h3>Tito</h3><p>Start um 14:00 Uhr, voraussichtliches Ende zwischen 00:00 und 00:30 Uhr.</p><div class="contact-actions"><a class="team-link-button" href="https://www.instagram.com/tito.graf/" target="_blank" rel="noopener">Instagram öffnen</a></div></article>
+            <article class="detail-card"><span class="detail-label">Location</span><h3>Herr Ferrari</h3><p>Ansprechpartner im Löwenhof und morgens vor Ort.</p></article>
+            <article class="detail-card pending-card"><span class="detail-label">Floristik</span><h3>Noch in Klärung</h3><p>Dienstleister und genaue Aufgabenverteilung werden später ergänzt.</p></article>
           </div>
-        </details>
-        <details>
-          <summary><strong>Empfang, Essen &amp; Feier</strong><i>+</i></summary>
-          <div class="team-detail-grid">
-            <p><b>Empfang</b><span>Direkt nach der Trauung mit Fingerfood und Getränken.</span></p>
-            <p><b>Shooting</b><span>Etwa eine Stunde; Ort und Gruppenfoto-Reihenfolge offen.</span></p>
-            <p><b>Platznehmen</b><span>Voraussichtlich zwischen 18:00 und 18:15 Uhr.</span></p>
-            <p><b>Abendessen</b><span>Geplanter Beginn gegen 18:30 Uhr.</span></p>
-            <p><b>Party</b><span>Eröffnung nach dem Hochzeitstanz gegen 22:00 Uhr.</span></p>
-            <p><b>Torte</b><span>Geplant gegen 23:30 Uhr.</span></p>
+        </div>
+      </details>
+
+      <details id="location">
+        <summary><span>Location & Anfahrt</span><span class="summary-icon">+</span></summary>
+        <div class="accordion-content">
+          <div class="location-team-grid">
+            <div><span class="detail-label">Location</span><h3>Löwenhof Lohfelden</h3><p>Bachstraße 36<br>34253 Lohfelden</p><div class="contact-actions"><a class="team-link-button" href="https://www.google.com/maps/dir/?api=1&destination=Bachstra%C3%9Fe+36%2C+34253+Lohfelden" target="_blank" rel="noopener">Route öffnen</a></div></div>
+            <iframe class="map-frame" title="Karte zum Löwenhof Lohfelden" src="https://www.google.com/maps?q=Bachstra%C3%9Fe%2036%2C%2034253%20Lohfelden&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-        </details>
-        <details>
-          <summary><strong>Technik &amp; Effekte</strong><i>+</i></summary>
-          <div class="team-detail-grid">
-            <p><b>DJ-Technik</b><span>Komplettes Equipment plus Outdoor-Box.</span></p>
-            <p><b>Licht</b><span>Bodenspots, Discokugel und Partybeleuchtung.</span></p>
-            <p><b>Hochzeitstanz</b><span>Bodennebel und Kaltfunken fest eingeplant.</span></p>
-            <p><b>Rückkehr</b><span>„Forever“ von Chris Brown.</span></p>
-            <p><b>Beamer</b><span>Ist vor Ort vorhanden.</span></p>
-            <p><b>Probleme</b><span>Zuerst Trauzeugen ansprechen; diese koordinieren mit Marco.</span></p>
+          <div class="fact-list">
+            <div><strong>Zugang:</strong><span>Voraussichtlich ab 09:00 Uhr. Herr Ferrari ist morgens vor Ort.</span></div>
+            <div><strong>Be- und Entladen:</strong><span>Über denselben Parkplatz wie die Gäste. Es gibt keinen separaten Dienstleistereingang.</span></div>
+            <div><strong>Fahrzeuge:</strong><span>DJ, Fotograf und Floristik parken auf dem regulären Gästeparkplatz.</span></div>
+            <div><strong>Getting Ready:</strong><span>Im Hotel zur Post.</span></div>
+            <div><strong>Lagerung:</strong><span>Keine eigene Lagerfläche; Deko, Geschenke und persönliche Sachen kommen in den Zwischenraum zum Hinterausgang.</span></div>
+            <div><strong>Einschränkungen:</strong><span>Kein Konfetti und kein Feuerwerk. Lautstärkereduzierung ab 22:00 oder 24:00 Uhr ist noch zu klären.</span></div>
+            <div><strong>Ende:</strong><span>Spätestens um 04:00 Uhr.</span></div>
           </div>
-        </details>
-      </div>
+        </div>
+      </details>
+
+      <details id="aufbau">
+        <summary><span>Aufbau & Dekoration</span><span class="summary-icon">+</span></summary>
+        <div class="accordion-content"><div class="fact-list">
+          <div><strong>Aufbaustart:</strong><span>Voraussichtlich ab 09:00 Uhr.</span></div>
+          <div><strong>Aufbauteam:</strong><span>Noch zu klären; voraussichtlich Kevin, Trauzeuge und Eltern.</span></div>
+          <div><strong>Eigenleistung:</strong><span>Dekoration und Floristik werden von euch selbst aufgebaut.</span></div>
+          <div><strong>Location:</strong><span>Übernimmt Geschirr, Mobiliar und den übrigen Aufbau der Location.</span></div>
+          <div><strong>Floristik:</strong><span>Aufgabenverteilung mit einem möglichen externen Dienstleister noch offen.</span></div>
+          <div><strong>DJ:</strong><span>Übernimmt seine gesamte Technik und den dazugehörigen Aufbau.</span></div>
+          <div><strong>Bereiche:</strong><span>Freie Trauung und Innenbereich der Location.</span></div>
+          <div><strong>Fertigstellung:</strong><span>Der vollständige Aufbau soll spätestens um 13:30 Uhr abgeschlossen sein.</span></div>
+          <div><strong>Endkontrolle:</strong><span>Kevin und die Trauzeugen.</span></div>
+          <div><strong>Abbau:</strong><span>Am Folgetag durch das Ehepaar und die Trauzeugen.</span></div>
+          <div><strong>Zwischenlagerung:</strong><span>Zwischenraum zum Hinterausgang.</span></div>
+        </div></div>
+      </details>
+
+      <details id="trauung">
+        <summary><span>Freie Trauung</span><span class="summary-icon">+</span></summary>
+        <div class="accordion-content"><div class="fact-list">
+          <div><strong>Ort:</strong><span>Draußen direkt vor dem Eingang des Löwenhofs.</span></div>
+          <div><strong>Schlechtwetter:</strong><span>Bei Regen findet die freie Trauung im Innenbereich statt.</span></div>
+          <div><strong>Beginn:</strong><span>15:30 Uhr.</span></div>
+          <div><strong>Dauer:</strong><span>Voraussichtlich 45 bis 60 Minuten; final mit Wiebke Mühling abzustimmen.</span></div>
+          <div><strong>Einzug:</strong><span>Anna wird von ihrem Vater Frank zum Trauplatz begleitet.</span></div>
+          <div><strong>Technik:</strong><span>Wiebke Mühling bringt Mikrofon und Lautsprecher mit.</span></div>
+          <div><strong>Musik:</strong><span>Einzug, Trauung und Auszug werden noch mit Wiebke Mühling abgestimmt.</span></div>
+          <div><strong>Ringe:</strong><span>Ringübergabe möglicherweise durch eines der Kinder von André.</span></div>
+          <div><strong>Eheversprechen:</strong><span>Voraussichtlich bei den jeweiligen Trauzeugen.</span></div>
+          <div><strong>Sitzordnung:</strong><span>Je Reihe fünf Plätze links und fünf Plätze rechts vom Gang. Vorne sitzen enge Familie und Trauzeugen, danach Freunde und weitere Gäste.</span></div>
+          <div><strong>Rituale:</strong><span>Bisher nichts fest geplant; wird noch mit Anna besprochen.</span></div>
+          <div><strong>Umräumen:</strong><span>Nach der Trauung durch den Löwenhof.</span></div>
+        </div></div>
+      </details>
+
+      <details id="feier">
+        <summary><span>Empfang & Feier</span><span class="summary-icon">+</span></summary>
+        <div class="accordion-content"><div class="fact-list">
+          <div><strong>Empfang:</strong><span>Direkt nach der Trauung mit Fingerfood und Getränken.</span></div>
+          <div><strong>Getränke:</strong><span>Sekt, Lillet und alkoholfreie Getränke nach Wunsch; zunächst kein Bier, Wein oder Schnaps.</span></div>
+          <div><strong>Koordination:</strong><span>Brautpaar und Trauzeugen begrüßen die Gäste, bevor Anna und Kevin zum Shooting fahren.</span></div>
+          <div><strong>Brautpaarshooting:</strong><span>Voraussichtlich etwa eine Stunde an einer noch festzulegenden Location.</span></div>
+          <div><strong>Gäste währenddessen:</strong><span>Die Gäste bleiben im Löwenhof, essen, trinken und kommen in Ruhe an.</span></div>
+          <div><strong>Gruppenfotos:</strong><span>Entweder direkt nach der Trauung oder nach Rückkehr des Brautpaars; noch festzulegen.</span></div>
+          <div><strong>Sitzordnung:</strong><span>Es gibt eine feste Sitzordnung.</span></div>
+          <div><strong>Platznehmen:</strong><span>Voraussichtlich gegen 18:00 bis 18:15 Uhr.</span></div>
+          <div><strong>Rede:</strong><span>Kevin begrüßt die Gäste vor dem Essen.</span></div>
+          <div><strong>Abendessen:</strong><span>Geplanter Beginn gegen 18:30 Uhr mit Vorsuppe.</span></div>
+          <div><strong>Party:</strong><span>Der eigentliche Partybeginn folgt nach dem Hochzeitstanz gegen 22:00 Uhr.</span></div>
+          <div><strong>Ankündigungen:</strong><span>Rede, Hochzeitstanz und Torte werden voraussichtlich durch Marco oder Kevin angekündigt.</span></div>
+          <div><strong>Hochzeitstorte:</strong><span>Geplant gegen 23:30 Uhr.</span></div>
+        </div></div>
+      </details>
+
+      <details id="technik">
+        <summary><span>Technik & besondere Effekte</span><span class="summary-icon">+</span></summary>
+        <div class="accordion-content"><div class="fact-list">
+          <div><strong>DJ-Technik:</strong><span>Komplettes DJ-Equipment sowie eine Outdoor-Box für den Außenbereich.</span></div>
+          <div><strong>Lichttechnik:</strong><span>Bodenspots, Discokugel und weitere Partybeleuchtung.</span></div>
+          <div><strong>DJ-Standort:</strong><span>Auf der festen Bühne im Löwenhof.</span></div>
+          <div><strong>Trauungstechnik:</strong><span>Wiebke Mühling bringt Mikrofon und Lautsprecher mit.</span></div>
+          <div><strong>Mikrofone:</strong><span>Wiebke Mühling stellt Mikrofone für die Eheversprechen, Marco für Reden und Feier.</span></div>
+          <div><strong>Beamer:</strong><span>Ein Beamer ist vorhanden.</span></div>
+          <div><strong>Hintergrundmusik:</strong><span>Leichte Musik während Empfang und Essen; Tischaufrufe eventuell mit jeweils passender Musik.</span></div>
+          <div><strong>Rückkehr des Brautpaars:</strong><span>„Forever“ von Chris Brown.</span></div>
+          <div><strong>Bodennebel:</strong><span>Fest für den Hochzeitstanz eingeplant.</span></div>
+          <div><strong>Kaltfunken:</strong><span>Beim Hochzeitstanz und bei Bedarf bei weiteren passenden Momenten.</span></div>
+          <div><strong>Ankündigungen:</strong><span>Musikalische Gestaltung von Hochzeitstanz und Torte noch offen.</span></div>
+          <div><strong>Technische Probleme:</strong><span>Zunächst die Trauzeugen ansprechen; diese vermitteln bei Bedarf direkt an Marco.</span></div>
+        </div></div>
+      </details>
+
+      <details id="offene-punkte">
+        <summary><span>Offene Punkte</span><span class="summary-icon">+</span></summary>
+        <div class="accordion-content"><div class="fact-list">
+          <div><strong>Trauzeugen:</strong><span>Telefonnummern und genaue Aufgabenverteilung mit André und Milena abstimmen.</span></div>
+          <div><strong>Aufbau:</strong><span>Finales Aufbauteam und genaue Reihenfolge festlegen.</span></div>
+          <div><strong>Floristik:</strong><span>Dienstleister sowie Aufgabenverteilung klären.</span></div>
+          <div><strong>Location:</strong><span>Zugang ab 09:00 Uhr und Lautstärkereduzierung ab 22:00 oder 24:00 Uhr bestätigen.</span></div>
+          <div><strong>Freie Trauung:</strong><span>Dauer, Musik für Einzug und Auszug sowie mögliche Rituale mit Wiebke Mühling und Anna abstimmen.</span></div>
+          <div><strong>Ringe:</strong><span>Ringträger verbindlich festlegen.</span></div>
+          <div><strong>Eheversprechen:</strong><span>Aufbewahrung und Übergabe durch die Trauzeugen bestätigen.</span></div>
+          <div><strong>Fotos:</strong><span>Ort des Brautpaarshootings und Zeitpunkt der Gruppenfotos festlegen.</span></div>
+          <div><strong>Empfang:</strong><span>Genauen Ablauf während des Brautpaarshootings und Rückkehrzeit bestimmen.</span></div>
+          <div><strong>Musik:</strong><span>Tischaufrufe sowie Ankündigungen von Hochzeitstanz und Torte abstimmen.</span></div>
+          <div><strong>Fotograf:</strong><span>Endzeit der Reportage final festlegen.</span></div>
+        </div></div>
+      </details>
     </section>
   </main>
-
-  <footer class="team-footer"><span>Interner Planungsstand</span><strong>Anna &amp; Kevin · 20. Mai 2028</strong></footer>
-  <script src="assets/js/team.js?v=10"></script>
+  <script>
+    document.querySelectorAll('.team-quick-nav a').forEach((link) => {
+      link.addEventListener('click', () => {
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) target.open = true;
+      });
+    });
+  </script>
 </body>
 </html>
