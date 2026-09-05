@@ -339,3 +339,22 @@
     backdrop-filter: blur(18px);
   }
 }
+
+/* Kompakte Übersicht für das Nachschlagen am Hochzeitstag. */
+.nav-hint { margin: 26px 0 8px; color: var(--muted); font-size: .78rem; }
+.team-quick-nav { position: sticky; top: 8px; z-index: 6; flex-wrap: nowrap; justify-content: flex-start; overflow-x: auto; margin-top: 8px; background: rgba(245,241,236,.96); scrollbar-width: thin; scrollbar-color: var(--accent) transparent; }
+.team-quick-nav a { flex: 0 0 auto; }
+.team-quick-nav::-webkit-scrollbar { display: block; height: 4px; }
+.team-quick-nav::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 4px; }
+.accordion-list > details { scroll-margin-top: 110px; box-shadow: none; }
+.team-info-card { min-height: 0; padding: 22px 18px; box-shadow: none; }
+.team-info-card h2 { margin-top: 12px; }
+.team-timeline { gap: 0; }
+.timeline-item { border: 0; border-bottom: 1px solid var(--line); border-radius: 0; background: transparent; }
+.timeline-highlight { background: rgba(155,125,132,.08); }
+.timeline-time { font-weight: 500; }
+.detail-card { border: 0; border-left: 1px solid var(--line); border-radius: 0; background: transparent; }
+.detail-card:hover { transform: none; }
+.fact-list { gap: 0; }
+.fact-list > div { border: 0; border-bottom: 1px solid var(--line); border-radius: 0; background: transparent; padding: 14px 0; }
+.team-quick-nav a:focus-visible, .team-link-button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }

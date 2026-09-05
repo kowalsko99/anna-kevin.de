@@ -7,11 +7,26 @@ document.querySelectorAll("[data-open-target]").forEach((link) => {
 
     event.preventDefault();
     target.open = true;
-    target.scrollIntoView({ behavior: "smooth", block: "start" });
+    target.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
   });
 });
 
 document.querySelectorAll("[data-demo-form]").forEach((form) => {
+  const attendance = form.querySelector('[name="status"]');
+  const attendanceFields = form.querySelectorAll('[data-attendance-field]');
+  const updateAttendance = () => {
+    const declined = attendance.value === "Absage";
+    attendanceFields.forEach((field) => {
+      field.hidden = declined;
+      field.querySelectorAll("input, select, textarea").forEach((input) => {
+        input.disabled = declined;
+      });
+    });
+    form.querySelector('[name="persons"]').required = !declined;
+  };
+  attendance.addEventListener("change", updateAttendance);
+  form.addEventListener("reset", () => setTimeout(updateAttendance, 0));
+  updateAttendance();
   form.addEventListener("submit", (event) => {
     event.preventDefault();
 

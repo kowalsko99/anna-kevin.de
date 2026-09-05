@@ -215,3 +215,47 @@
     padding: 18px;
   }
 }
+
+/* Ruhigere Flächen und direkter Zugang zu den wichtigsten Aktionen. */
+.info-grid { gap: 0; border-block: 1px solid var(--line); }
+.info-grid .info-card { min-height: 0; padding: 26px 22px; border: 0; border-radius: 0; box-shadow: none; background: transparent; backdrop-filter: none; }
+.info-grid .info-card + .info-card { border-left: 1px solid var(--line); }
+.info-grid .info-card:hover { transform: none; background: transparent; }
+.guest-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin: 26px 0; }
+.guest-actions .text-button { min-height: 48px; padding: 12px 26px; }
+.nav-hint { margin: 26px 0 8px; color: var(--muted); font-size: .78rem; }
+.guest-quick-nav { margin-top: 8px; scrollbar-width: thin; scrollbar-color: var(--accent) transparent; }
+.guest-quick-nav::-webkit-scrollbar { display: block; height: 4px; }
+.guest-quick-nav::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 4px; }
+.accordion-list > details { scroll-margin-top: 100px; box-shadow: none; }
+.accordion-list > details[open] { box-shadow: inset 3px 0 0 rgba(155,125,132,.5); }
+.unplugged-banner { grid-template-columns: 1fr 1.25fr; border-width: 1px; box-shadow: none; }
+.unplugged-banner h2 { font-size: clamp(2rem, 4vw, 2.8rem); line-height: 1.08; }
+.unplugged-banner .ceremony-caption { margin-top: 12px; font-size: .8rem; }
+.guest-timeline { list-style: none; padding: 0; margin: 10px 0 0; }
+.guest-timeline li { display: grid; grid-template-columns: 130px 1fr; gap: 24px; padding: 22px 0; border-top: 1px solid var(--line); }
+.guest-timeline li:first-child { border-top: 0; }
+.guest-time { color: var(--accent); padding-top: 5px; }
+.guest-timeline h3 { font-size: 1.8rem; }
+.guest-timeline p { margin: 8px 0 0; }
+.shared-map { display: block; height: 300px; min-height: 0; box-shadow: none; margin-bottom: 30px; }
+.travel-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.travel-column + .travel-column { padding-left: 32px; border-left: 1px solid var(--line); }
+.form-panel, .guest-form { padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+.guest-form { margin-top: 26px; }
+[hidden] { display: none !important; }
+.contact-card { border: 0; border-radius: 0; border-left: 1px solid var(--line); background: transparent; }
+.faq-list details { border: 0; border-bottom: 1px solid var(--line); border-radius: 0; background: transparent; }
+@media (max-width: 900px) {
+  .info-grid { grid-template-columns: 1fr; }
+  .info-grid .info-card + .info-card { border-left: 0; border-top: 1px solid var(--line); }
+  .info-grid .info-card { padding: 18px; }
+  .info-grid .info-card h2 { margin-top: 10px; }
+  .unplugged-banner { grid-template-columns: 1fr; }
+}
+@media (max-width: 680px) {
+  .travel-grid { grid-template-columns: 1fr; gap: 26px; }
+  .travel-column + .travel-column { padding: 26px 0 0; border-left: 0; border-top: 1px solid var(--line); }
+  .guest-timeline li { grid-template-columns: 1fr; gap: 6px; }
+  .guest-actions .text-button { flex: 1 1 150px; }
+}

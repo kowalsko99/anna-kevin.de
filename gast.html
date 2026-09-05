@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css?v=8">
-  <link rel="stylesheet" href="assets/css/guest-overrides.css?v=3">
+  <link rel="stylesheet" href="assets/css/guest-overrides.css?v=4">
 </head>
 <body>
   <main class="guest-page">
@@ -21,25 +21,15 @@
     </header>
 
     <section class="info-grid" aria-label="Die wichtigsten Informationen">
-      <article class="info-card">
-        <span class="info-label">Wann</span>
-        <h2>Samstag, 20. Mai 2028</h2>
-        <p>Freie Trauung um <strong>15:30 Uhr</strong></p>
-        <p class="info-note">Bitte seid spätestens um <strong>15:15 Uhr</strong> vor Ort. Kevin wartet auf die Braut – bitte lasst ihn nicht auch noch auf euch warten. So verpasst niemand ihren Einzug und die Trauung kann ganz entspannt beginnen.</p>
-      </article>
-
-      <article class="info-card">
-        <span class="info-label">Wo</span>
-        <h2>Gut Wissmannshof</h2>
-        <p>Unsere Trauung und Feier finden an derselben Location statt.</p>
-      </article>
-
-      <article class="info-card">
-        <span class="info-label">Trauung & Feier</span>
-        <h2>Alles an einem Ort</h2>
-        <p>Die freie Trauung und die anschließende Hochzeitsfeier finden auf Gut Wissmannshof statt. Ein Ortswechsel ist nicht erforderlich.</p>
-      </article>
+      <article class="info-card"><span class="info-label">Datum</span><h2>20. Mai 2028</h2><p>Samstag · Unser Hochzeitstag</p></article>
+      <article class="info-card"><span class="info-label">Ankunft</span><h2>15:00–15:15 Uhr</h2><p>Die freie Trauung beginnt um 15:30 Uhr.</p></article>
+      <article class="info-card"><span class="info-label">Location</span><h2>Gut Wissmannshof</h2><p>Trauung und Feier an einem Ort.</p></article>
     </section>
+    <div class="guest-actions">
+      <a class="text-button" href="#rsvp" data-open-target="rsvp">Zu- oder absagen</a>
+      <a class="text-button secondary" href="https://www.google.com/maps/dir/?api=1&destination=Wissmannshof+1%2C+34355+Staufenberg" target="_blank" rel="noopener">Route öffnen ↗</a>
+    </div>
+    <p class="nav-hint">Weitere Themen · auf dem Handy seitlich wischen →</p>
 
     <nav class="guest-quick-nav" aria-label="Schnellnavigation">
       <a href="#hochzeitstag" data-open-target="hochzeitstag">Tagesablauf</a>
@@ -53,7 +43,7 @@
     <aside class="unplugged-banner">
       <div>
         <span class="info-label">Wichtiger Hinweis</span>
-        <h2>Unplugged Ceremony</h2>
+        <h2>Die Trauung bewusst gemeinsam erleben</h2><p class="ceremony-caption">Unsere handyfreie Trauung</p>
       </div>
       <p><strong>Bitte lasst eure Handys und Kameras während der gesamten freien Trauung vollständig verstaut.</strong><span>Unser Fotograf hält alle wichtigen Momente für uns fest. Nach der Trauung dürft ihr selbstverständlich sehr gerne fotografieren.</span></p>
     </aside>
@@ -62,15 +52,20 @@
       <details id="hochzeitstag">
         <summary><span>Der Hochzeitstag</span><span class="summary-icon">+</span></summary>
         <div class="accordion-content">
-          <p>Ab <strong>15:00 Uhr</strong> heißen wir euch auf Gut Wissmannshof willkommen.</p>
-          <p>Die freie Trauung beginnt um <strong>15:30 Uhr</strong>. Im Anschluss feiern wir gemeinsam vor Ort weiter.</p>
+          <ol class="guest-timeline">
+            <li><span class="guest-time">Ab 15:00 Uhr</span><div><h3>Willkommen</h3><p>Kommt entspannt auf Gut Wissmannshof an. Bitte seid spätestens um 15:15 Uhr vor Ort.</p></div></li>
+            <li><span class="guest-time">15:30 Uhr</span><div><h3>Unser Ja-Wort</h3><p>Wir freuen uns, diesen besonderen Moment mit euch zu teilen.</p></div></li>
+            <li><span class="guest-time">Im Anschluss</span><div><h3>Gemeinsam feiern</h3><p>Wir verbringen den weiteren Tag zusammen auf Gut Wissmannshof. Lasst euch überraschen.</p></div></li>
+          </ol>
         </div>
       </details>
 
       <details id="anreise">
         <summary><span>Anreise & Übernachtung</span><span class="summary-icon">+</span></summary>
         <div class="accordion-content">
-          <div class="location-block">
+          <iframe class="map-frame shared-map" title="Karte zu Gut Wissmannshof und Hotel" src="https://www.google.com/maps?q=Wissmannshof%201%2C%2034355%20Staufenberg&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="travel-grid">
+          <div class="travel-column">
             <div>
               <span class="info-label">Location</span>
               <h3>Gut Wissmannshof</h3>
@@ -80,10 +75,9 @@
                 <a class="text-button secondary" href="https://www.google.com/maps/dir/?api=1&destination=Wissmannshof+1%2C+34355+Staufenberg" target="_blank" rel="noopener">Route öffnen</a>
               </div>
             </div>
-            <iframe class="map-frame" title="Karte zum Gut Wissmannshof" src="https://www.google.com/maps?q=Wissmannshof%201%2C%2034355%20Staufenberg&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
 
-          <div class="location-block hotel-block">
+          <div class="travel-column">
             <div>
               <span class="info-label">Übernachtung</span>
               <h3>Hotel auf Gut Wissmannshof</h3>
@@ -94,10 +88,9 @@
                 <a class="text-button" href="tel:+4955439992239">Hotel anrufen</a>
                 <a class="text-button secondary" href="mailto:info@hotel-wissmannshof.com">E-Mail schreiben</a>
                 <a class="text-button secondary" href="https://hotel-wissmannshof.com/hotel/zimmer-suiten-im-hauptgebaeude/" target="_blank" rel="noopener">Hotel ansehen</a>
-                <a class="text-button secondary" href="https://www.google.com/maps/dir/?api=1&destination=Wissmannshof+1%2C+34355+Staufenberg" target="_blank" rel="noopener">Route öffnen</a>
               </div>
             </div>
-            <iframe class="map-frame" title="Karte zum Hotel auf Gut Wissmannshof" src="https://www.google.com/maps?q=Wissmannshof%201%2C%2034355%20Staufenberg&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
           </div>
         </div>
       </details>
@@ -120,10 +113,10 @@
               <div class="form-grid">
                 <label>Vor- und Nachname<input type="text" name="name" autocomplete="name" required></label>
                 <label>Rückmeldung<select name="status" required><option value="">Bitte auswählen</option><option>Zusage</option><option>Absage</option></select></label>
-                <label>Anzahl aller teilnehmenden Personen<input type="number" name="persons" min="0" required></label>
-                <label class="full-width">Namen aller Begleitpersonen und Kinder<textarea name="companions" rows="3"></textarea></label>
-                <label class="full-width">Essensbesonderheiten, Allergien oder Unverträglichkeiten<textarea name="food" rows="3"></textarea></label>
-                <label>Interesse an einem Hotelzimmer<select name="hotel"><option>Nein</option><option>Ja</option><option>Noch unklar</option></select></label>
+                <label data-attendance-field>Anzahl teilnehmender Personen – einschließlich dir<input type="number" name="persons" min="1" step="1" required></label>
+                <label class="full-width" data-attendance-field>Namen aller Begleitpersonen und Kinder<textarea name="companions" rows="3"></textarea></label>
+                <label class="full-width" data-attendance-field>Essensbesonderheiten, Allergien oder Unverträglichkeiten<textarea name="food" rows="3"></textarea></label>
+                <label data-attendance-field>Interesse an einem Hotelzimmer<select name="hotel"><option>Nein</option><option>Ja</option><option>Noch unklar</option></select></label>
                 <label class="full-width">Nachricht an uns<textarea name="message" rows="4" placeholder="Hier ist Platz für alles, was ihr uns noch mitteilen möchtet."></textarea></label>
               </div>
               <button class="submit-button form-submit full-submit" type="submit">Rückmeldung absenden</button>
@@ -150,7 +143,7 @@
           <details>
             <summary>Dürfen wir während der Trauung Fotos machen?</summary>
             <div>
-              <p>Unsere freie Trauung wird als <strong>Unplugged Ceremony</strong> stattfinden. Während der Zeremonie bitten wir euch daher ausdrücklich darum, eure Handys und Kameras nicht zu benutzen.</p>
+              <p>Wir wünschen uns eine <strong>handyfreie Trauung</strong>. Während der Zeremonie bitten wir euch daher ausdrücklich darum, eure Handys und Kameras nicht zu benutzen.</p>
               <p>Unser Fotograf wird alle wichtigen und emotionalen Momente professionell festhalten. Die entstandenen Bilder der Trauung teilen wir anschließend sehr gerne mit euch.</p>
               <p>Uns ist wichtig, dass ihr diesen Moment gemeinsam mit uns erlebt, statt ihn durch einen Bildschirm zu verfolgen. Außerdem möchten wir auf unseren Hochzeitsfotos lieber eure Gesichter und Emotionen sehen als eine Reihe hochgehaltener Handys.</p>
               <p>Nach der Trauung dürft ihr selbstverständlich gerne fotografieren. Vor Ort wird es außerdem eine gesonderte Möglichkeit geben, über die ihr eure Bilder mit uns teilen könnt.</p>
@@ -175,6 +168,6 @@
     </footer>
   </main>
 
-  <script src="assets/js/guest.js?v=2"></script>
+  <script src="assets/js/guest.js?v=3"></script>
 </body>
 </html>
